@@ -1,0 +1,59 @@
+html, body, ul, ol, li, h1, h2, h3 p em {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+html,body {
+    font-size: 100px;
+    height: 100%;
+    background: #0b2426;
+}
+img {
+    border: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+i {
+    font-style: normal;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* link */
+
+a {
+    color: #666;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+.float-l {
+    float: left;
+}
+.float-r {
+    float: right;
+}
+.pr { position: relative;}
+.pa { position: absolute;}
+.pf { position: fixed;}
