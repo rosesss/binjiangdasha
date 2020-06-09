@@ -103,9 +103,8 @@
 }
 .bg2_shadow {width: 7.5rem;height:100%; background:rgba(55,34,58,0.6); background-size:cover; background-repeat: no-repeat;left: 0;top:0;z-index: 998;}
 .swiper-slide-active .bg2_shadow {-webkit-animation:fadeIn 1s 2s ease both;-moz-animation:fadeIn 1s 2s ease both;}
-.txt1 {width:6.8rem;height: 3.8rem;background-size:cover; background-repeat: no-repeat;left: 40%;top:42%;margin:-1.9rem 0 0 -2.4rem;}
+.txt1 {width: 77.2vw; left:0;right: 0;bottom: 0;top: 0; margin: auto; }
 .txt2 {width:4.8rem;height: 3.8rem;left: 50%;top:46%;margin:-1.9rem 0 0 -2.4rem;}
-.txt1 {background-image: url(image/2-1.png);}
 .swiper-slide-active .txt1 {-webkit-animation:fadeInUp1 3s 2.5s ease both;-moz-animation:fadeInUp1 3s 2.5s ease both;}
 
 .swiper-slide-active .txt2 {-webkit-animation:fadeInUp4 9s 4.3s ease both;-moz-animation:fadeInUp4 9s 4.3s ease both;}
@@ -249,13 +248,26 @@
     100%{opacity:0;}
 }
 .navbar {width: 7.5rem;height: 100%; display: none; background: #37223A;z-index: 998;}
-.navbar ul {display:flex;justify-content:space-between; align-items:center;flex-wrap:wrap;top:0.92rem;left:0.36rem;bottom:0.4rem;right:0.36rem;padding: 0; margin: 0;}
-/* .navbar {display: flex; flex-direction: column; } */
-.navbar .bar-list{
-    display: flex;flex-direction: row; align-items: center;width: 100%; height: 24.4%;
+
+.navbar ul {position: fixed; left:0;top:0;right:0;bottom:0; margin: auto;display: block;}
+.navbar ul .navbar_cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.navbar .bar-list{
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;background: #E1B77E;
+}
+
 .navbar .bar-lists {
-    display: flex;flex-direction: row; align-items: center;width: 100%; height: 24.4%;
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;background: #E1B77E;
 }
 .navbar .bar-list {
     -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -325,20 +337,45 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    /* width: 47.8vw; */
+    /* height: 100%; */
+}
+.navbar ul li.cur .menu1 {
+    width: 47.8vw;
+}
+.navbar ul li.cur .menu3 {
+    width: 51.4vw;
+}
+.navbar ul li.cur .menu5 {
+    width: 47.8vw;
+}
+.navbar ul li.cur .menu7 {
+    width: 51.4vw;
+}
+.navbar ul li.curright .menu2 {
+    width: 58.4vw;
+}
+.navbar ul li.curright .menu4 {
+    width: 51.8vw;
+}
+.navbar ul li.curright .menu6 {
+    width: 58.4vw;
+}
+.navbar ul li.curright .menu8 {
+    width: 51.8vw;
 }
 .navbar ul li.curright {
     /* flex: 1; */
     position: relative;
-    margin-left: -1.5rem;
+    margin-left: -31vw;
+}
+.navbar ul li.currights {
+    margin-left: -18vw;
 }
 .navbar ul li.curright img {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
 }
 .navbar ul li.cur .leftmask {
     position: absolute;
@@ -346,23 +383,99 @@
     top: 0;
     opacity: 0.4;
 }
+.navbar ul li.cur .leftmask1 {
+    width: 47.8vw;
+}
+.navbar ul li.cur .leftmask3 {
+    width: 51.4vw;
+}
+.navbar ul li.cur .leftmask5 {
+    width: 47.8vw;
+}
+.navbar ul li.cur .leftmask7 {
+    width: 51.4vw;
+}
+.navbar ul li.curright .rightmask2 {
+    width: 58.4vw;
+}
+.navbar ul li.curright .rightmask4 {
+    width: 51.8vw;
+}
+.navbar ul li.curright .rightmask6 {
+    width: 58.4vw;
+}
+
 .navbar ul li.cur  .menu-title1 {
     position: absolute;
-    left: 0.5rem;
+    left: 3vw;
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 2rem;
-    height: 0.7rem;
+    width: 12vw;
 }
-.navbar ul li.curright .menu-title2 {
+.navbar ul li.cur  .menu-title3 {
     position: absolute;
-    left: 1.8rem;
+    left: 3vw;
     top: 0;
-    width: 2rem;
-    height: 0.7rem;
     bottom: 0;
     margin: auto;
+    width: 17vw;
+}
+.navbar ul li.cur  .menu-title5 {
+    position: absolute;
+    left: 3vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 17vw;
+}
+.navbar ul li.cur  .menu-title7 {
+    position: absolute;
+    left: 3vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 17vw;
+}
+.navbar ul li.curright  .menu-title2 {
+    position: absolute;
+    right: 3vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 17vw;
+}
+.navbar ul li.curright  .menu-title4 {
+    position: absolute;
+    right: 3vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 17vw;
+}
+.navbar ul li.curright  .menu-title6 {
+    position: absolute;
+    right: 3vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 17vw;
+}
+.navbar ul li.curright  .menu-title8 {
+    position: absolute;
+    right: 3vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 12.2vw;
+}
+.navbar ul li.cur  .menu-title1 {
+    position: absolute;
+    left: 3vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 12vw;
 }
 .navbar ul li.curright .rightmask {
     position: absolute;
@@ -380,7 +493,7 @@
 .mtxt8 { background-image: url(image/mtxt8.png);height:0.58rem;}
 .nextbar {width:1.83rem;height: 0.91rem; display:none;left:50%;bottom:-0.02rem;margin-left:-0.89rem; z-index: 999; background-image: url(image/next.png); background-size:1.77rem 0.88rem; background-repeat: no-repeat;-webkit-animation:fadeInUp3 1s 1s ease both;-moz-animation:fadeInUp3 1s 1s ease both;}
 
-.bg3 {width: 7.5rem;height:79%; background-image: url(image/3-3.png); background-size: cover; background-position: center center; background-repeat: no-repeat;left: 0;top:0;z-index:998;}
+.bg3 {width: 100vw; left:0; top: 0;z-index:998;}
 /* .bg6 {background-image: url(image/3-3.png);} */
 @-webkit-keyframes kenburns-top {
   0% {
@@ -410,7 +523,8 @@
             transform-origin: top;
   }
 }
-.ba1_1 {width:4.49rem;height: 0.63rem; background-image: url(image/3-1.png);opacity: 0; background-size:100% 100%; background-repeat: no-repeat;right:0.57rem;top:1.12rem;z-index:9;}
+.ba1_1 {width:59.8vw; right: 2vw; top: 10vh;z-index:999;opacity: 0;}
+
 .swiper-slide-active .ba1_1 {-webkit-animation: slide-in-right 1s 1s ;animation: slide-in-right 1s 1s ;animation-fill-mode: forwards;}
 @-webkit-keyframes slide-in-right {
   0% {
@@ -437,15 +551,19 @@
   }
 }
 
-.ba1_3 {width: 5.55rem;height:1.5rem;background-image: url(image/3-2.png); background-size:100% 100%; background-repeat: no-repeat;right: 0.27rem;bottom:-1.5rem;z-index:9;}
+.ba1_3 {width: 73.4vw;bottom: 6vw; right: 2vw;z-index:9;}
 .swiper-slide-active .ba1_3 {-webkit-animation:fadeInRight 1s .8s ease both;-moz-animation:fadeInRight 1s .8s ease both;}
 
 .bg4 {width: 7.5rem;height:100%;left: 0;top:0;z-index:998;}
 .add-title {
-    background-image: url(image/4-3.png);background-size: 100% 100%;background-repeat: no-repeat;position: absolute; left: 0.65rem;top: 52%; width: 2.04rem;height: 0.92rem;
+    width: 27.4vw;
+    left: 9vw;
+    top: 61vh;
 }
 .add-desc {
-    background-image: url(image/4-4.png);background-size: 4.12rem 2.8rem;background-repeat: no-repeat;position: absolute; left: 0.65rem;top: 67%; width: 4.12rem;height: 2.8rem;
+    width: 56.6vw;
+    left: 9vw;
+    top: 72vh;
 }
 .swiper-slide-active .add-title {-webkit-animation: slide-in-left 2s ; animation: slide-in-left 2s ; animation-fill-mode: forwards;}
 .swiper-slide-active .add-desc {-webkit-animation: slide-in-left 2s ; animation: slide-in-left 2s ; animation-fill-mode: forwards;}
@@ -479,7 +597,7 @@
 .swiper-slide-active .ba2_2{-webkit-animation:fadeInRight 1s .4s ease both;-moz-animation:fadeInRight 1s .4s ease both;}
 .ba2_3 {width:3.75rem;height:0.95rem; background-image: url(image/ba2_3.png); background-size:3.75rem 0.95rem; background-repeat: no-repeat;right:0.57rem;top:35.2%;}
 .swiper-slide-active .ba2_3{-webkit-animation:fadeInRight 1s .6s ease both;-moz-animation:fadeInRight 1s .6s ease both;}
-.ba2_4 {width:7.5rem;height:49%; background-image: url(image/4-1.png); background-size:7.5rem 100%; background-repeat: no-repeat;background-position: 0 center; right:0rem;top:0rem;}
+.ba2_4 {left: 0;top: 0;width: 100vw;}
 /* .swiper-slide-active .ba2_4 {-webkit-animation:fadeInDown 1s 1.4s ease both;-moz-animation:fadeInDown 1s 1.4s ease both;}  */
 .addr1,.addr2,.addr3 {width: 2.12rem;height:1.1rem;background-image: url(image/ba2_5.png); background-size:2.12rem 3.81rem; background-repeat: no-repeat;left:0.57rem;}
 .addr1 {background-position: 0 0;top:11.2%;}
@@ -502,8 +620,8 @@
 .swiper-slide-active .ba3_5 {-webkit-animation:fadeIn .7s .2s ease both;-moz-animation:fadeIn .7s .2s ease both;}
 .ba3_menubg1 {width:15.36rem;height: 15.36rem;left: -4.59rem;top: -2.66rem;z-index: 998;} */
 .bg5 {width: 7.5rem;height: 100%;}
-.ba3_1 {width:3.5rem;height: 2.1rem; background: url(image/5-1.png);background-repeat: no-repeat; background-size: 100% 100%; left: 1rem; top: 1.3rem;}
-.ba3_2 {width: 72%; height: 55%; background: url(image/5-2.png); background-repeat: no-repeat;background-size: 100% 100%; right: 1rem; top: 4rem;}
+.ba3_1 {width: 33.7vw; left:10vw; top: 10vh;}
+.ba3_2 {width: 60vw; right: 20vw; top: 25vh;}
 .swiper-slide-active .ba3_2 {
     -webkit-animation:fadeInUp 1s .6s ease both;-moz-animation:fadeInUp 1s .6s ease both;
 }
@@ -556,7 +674,8 @@
 .etbtn8 {left: 9.95rem;top: 10.75rem;}
 .etbtn8 i {background-image: url(image/etbtn8.png); background-size:cover; background-repeat: no-repeat;-webkit-animation: breathing 1.5s 0.6s linear infinite;-moz-animation: breathing 1.5s 0.6s linear infinite;}
 .swiper-slide-active .etbtn8 {-webkit-animation:fadeIn 2s 3.4s ease both;-moz-animation:fadeIn .7s 3.4s ease both;}
-.et_cont {width: 7.5rem;height:100%;left: 0;top:0; z-index:999;}
+.et_cont, .et_cont10 {width: 7.5rem;height:100%;left: 0;top:0; z-index:999;}
+.swiper-slide-active .et_cont10{-webkit-animation:fadeIn 0.7s 0.2s ease both;-moz-animation:fadeIn .7s 0.2s ease both;}
 @-webkit-keyframes pulse{
     0%{-webkit-transform:scale(1)}
     100%{-webkit-transform:scale(1.03)}
@@ -565,7 +684,7 @@
     0%{-moz-transform:scale(1)}
     100%{-moz-transform:scale(1.03)}
 }
-.swiper-slide-active .et_bg6,.swiper-slide-active .et_bg8,.swiper-slide-active .et_bg9, .swiper-slide-active .et_bg10,.swiper-slide-active .et_bg13,.swiper-slide-active .bg7 {-webkit-animation:pulse 3s .2s ease both;-moz-animation:pulse 3s .2s ease both;}
+.swiper-slide-active .et_bg6,.swiper-slide-active .et_bg8,.swiper-slide-active .et_bg9, .swiper-slide-active .et_bg10,.swiper-slide-active .et_bg13,.swiper-slide-active .bg7, .swiper-slide-active .bg10 {-webkit-animation:pulse 3s .2s ease both;-moz-animation:pulse 3s .2s ease both;}
 .bg5-cover {position: absolute;left: 0;top: 0; width: 100%; height: 100%;background: #37223A;display: none;z-index: 999;}
 .close-cover {color: #EED3B0;position: absolute;     top: 0.24rem;
     right: 0.36rem;
@@ -576,8 +695,8 @@
 .cover-bottom {background: url(image/6-4.png); width: 3rem; height: 3.5rem; background-size: 100% 100%; margin:1rem 0 0 0.3rem;}
 .et_bg1 {width: 7.5rem;height:100%; background-position: 0 center; background-size:cover; background-repeat: no-repeat;left: 0;top:0;z-index:998; overflow: hidden;}
 .et-box {position: absolute;right: 1.1rem;top: 0.2rem; }
-.et-text {background-image: url(image/6-5.png); background-size: 100% 100%;width: 3rem;height: 0.7rem;}
-.et-enlarge {background-image: url(image/6-6.png); background-size: 100% 100%; width: 1.8rem;height: 0.3rem; margin-left: 1rem; -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;animation: pulsate-fwd 0.5s ease-in-out infinite both;}
+.et-text {width: 25.6vw;height: 5.8vw; right: 0.47vw; top: 0.07vh;}
+.et-enlarge { width: 16.4vw; right: 6.5vw; top: 4.7vh; -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;animation: pulsate-fwd 0.5s ease-in-out infinite both;}
 @-webkit-keyframes pulsate-fwd {
   0% {
     -webkit-transform: scale(1);
@@ -606,10 +725,11 @@
             transform: scale(1);
   }
 }
-.et-top {width: 100%;height: 6.2rem; background-image: url(image/6-2.jpeg);background-size: 100% 100%;margin-top: 1.2rem;}
-.et-down {display: flex; flex-direction: row;padding:0.8rem 0.5rem;}
-.et-left {width: 4.2rem; height: 4rem; background: url(image/6-3.png);background-size: 100% 100%;margin-right: 0.5rem;}
-.et-right {width: 2rem; height: 3rem; background-image: url(image/6-4.png); background-size: 100% 100%; position: absolute; right: 0.2rem;bottom: 1.2rem;}
+.et-top {width: 82.8vw; margin: 10vh auto 0;}
+/* .et-down {display: flex; flex-direction: row;padding:0.8rem 0.5rem;} */
+.et-left {width: 50vw; left: 9vw; bottom: 10vh; }
+.et-right {width: 29.2vw; right: 3vw; bottom: 10vh;}
+/* .et-right {width: 2rem; height: 3rem; background-image: url(image/6-4.png); background-size: 100% 100%; position: absolute; right: 0.2rem;bottom: 1.2rem;} */
 .swiper-slide-active .et-right {-webkit-animation: slide-in-right 2s ;animation: slide-in-right 2s ;}
 @-webkit-keyframes slide-in-right {
   0% {
@@ -642,12 +762,12 @@
 .swiper-slide-active .et_title1 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 
 .et_bg2 {width: 7.5rem;height:100%; z-index:998; overflow: hidden;}
-.et_text1 {width: 1.86rem;height: 0.5rem;background-image: url(image/7-2.png); background-size: 100% 100%;float: right;margin-right: 1.2rem; margin-top: 0.5rem;}
-.et_img1 {width: 4.5rem;height: 4rem; margin: 0 auto; background-image: url(image/7-3.png); background-size: 100% 100%;margin-top: 1.2rem;}
-.et_text2 {width: 1.86rem; height: 0.5rem; background-image: url(image/7-1.png); background-size: 100% 100%; float: right; margin-right: 1.2rem; margin-top: 1rem;}
-.et_img2 {width: 6.72rem; height: 5.11rem; margin: 0 auto; background-image: url(image/7-4.png); background-size: 100% 100%;margin-top: 2rem;}
-.swiper-slide-active .et_text1 {-webkit-animation: slide-in-right 0.5s ease-out ; animation: slide-in-right 0.5s ease-out ;}
-.swiper-slide-active .et_text2 {-webkit-animation: slide-in-right 0.5s ease-out ; animation: slide-in-right 0.5s ease-out ;}
+.et_text1 {width: 24.8vw; right: 14vw; top: 4vh;}
+.et_text2 {width: 24.8vw; right: 14vw; top: 47vh;}
+.et_img1 {width: 55.7vw; top: 11vh; left:0;right:0;margin:auto;}
+.et_img2 {width: 96.1vw; top: 54vh; right:0;}
+.swiper-slide-active .et_text1 {-webkit-animation: slide-in-right 2s ease-out ; animation: slide-in-right 2s ease-out ;}
+.swiper-slide-active .et_text2 {-webkit-animation: slide-in-right 2s ease-out ; animation: slide-in-right 2s ease-out ;}
 
 .et_txt2 {left: 0;top:5.02rem;}.et_txt2 img{width:4.06rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_txt2 {-webkit-animation:fadeInLeft 1s .6s ease both;-moz-animation:fadeInLeft 1s .6s ease both;}
@@ -655,9 +775,9 @@
 .swiper-slide-active .et_title2 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 
 .et_bg3 {width: 7.5rem;height:100%; left: 0;top:0;z-index:998; overflow: hidden;}
-.et_image3 {width: 90%; height: 70%; background: url(image/8-1.png); background-size: 100% 100%; margin: 1.5rem auto 0;}
-.et_text3 {width: 3.2rem; height: 0.5rem; background: url(image/8-2.png); background-size: 100% 100%; position: absolute; top: 5.3rem; right: 1rem;}
-.et_text3_2 {width: 3.2rem; height: 0.5rem; background: url(image/8-3.png); background-size: 100% 100%; position: absolute; top: 10.8rem; right: 1rem;}
+.et_image3 {width:77.3vw; top: 14vh;left:0;right:0;margin:auto}
+.et_text3 {width:42.6vw; right: 10vw; top:44vh}
+.et_text3_2 {width:42.6vw; right: 10vw; bottom: 10vh}
 .swiper-slide-active .et_text3 {-webkit-animation:fadeIn .7s .4s ease both;-moz-animation:fadeIn .7s .4s ease both;}
 .swiper-slide-active .et_text3_2 {-webkit-animation:fadeIn .7s .4s ease both;-moz-animation:fadeIn .7s .4s ease both;}
 .et_txt3 {right: 0;top:3.86rem;}.et_txt3 img{width:4.69rem;height:auto; vertical-align: top;}
@@ -665,12 +785,12 @@
 .et_title3 {left:2.81rem;top:1.87rem;}.et_title3 img{width:3.76rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_title3 {-webkit-animation:fadeInRight 1s .2s ease both;-moz-animation:fadeInRight 1s .2s ease both;}
 
-.et_bg4 {width: 7.5rem;height:100%; left: 0;top:0;z-index:998; overflow: hidden;}
-.et_text4 {width: 3.42rem; height: 0.5rem; background-image: url(image/9-3.png); background-size: 100% 100%; margin: 1rem auto 0;}
-.et_text4_2 {width: 3.42rem; height: 0.5rem; background-image: url(image/9-2.png); background-size: 100% 100%; margin: 0 auto;}
+.et_bg4 {width: 7.5rem;height:100%; left: 0;top:0;z-index:998; overflow: hidden;display: flex;flex-direction: column;}
+.et_text4 {width: 45.6vw; margin: 8vh auto 0;}
+.et_text4_2 {width: 45.6vw; margin: 5vh auto}
 .swiper-slide-active .et_text4 {-webkit-animation:fadeIn .7s .4s ease both;-moz-animation:fadeIn .7s .4s ease both}
 .swiper-slide-active .et_text4_2 {-webkit-animation:fadeIn .7s .4s ease both;-moz-animation:fadeIn .7s .4s ease both}
-.et_image4 {width: 80%; height: 70%; background-image: url(image/9-1.png); background-size: 100% 100%; margin: 0.5rem auto 0;}
+.et_image4 {width: 45vw; height: 107.8vw; margin: 5vh auto 0;}
 .et_txt4 {right: 0;top:7.61rem;}.et_txt4 img{width:4.77rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_txt4 {-webkit-animation:fadeInRight 1s .6s ease both;-moz-animation:fadeInRight 1s .6s ease both;}
 .et_title4 {left:2.71rem;top:5.79rem;}.et_title4 img{width:2.46rem;height:auto; vertical-align: top;}
@@ -860,13 +980,13 @@
 .et_title5 {left:0.7rem;top:1.45rem;}.et_title5 img{width:3.76rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_title5 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 
-.et_bg6 {width: 7.5rem;height:70%; background-image: url(image/11-1.jpg); background-position: 0 center; background-size:cover; background-repeat: no-repeat;left: 0;top:0;z-index:998; overflow: hidden;}
+.et_bg6 {width: 100vw;height:72vh; left:0; top:0;}
 .et_txt6 {left: 0;top:4.61rem;}.et_txt6 img{width:3.28rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_txt6 {-webkit-animation:fadeInLeft 1s .6s ease both;-moz-animation:fadeInLeft 1s .6s ease both;}
 .et_title6 {left: 0.95rem;top: 2.12rem;}.et_title6 img{width:3.76rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_title6 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 
-.et_bg7 {width: auto;height:71%;z-index:998;left:0;top: 0;}
+.et_bg7 {width: auto;height: 72vh;z-index:998;left:0;top: 0;}
 .et_bg7 img {
     position: absolute;
     right: 0;
@@ -874,7 +994,7 @@
     width: auto;
     height: 100%;
 }
-.et_bg11 {width: auto;height:71%;z-index:998;left:0;top: 0;}
+.et_bg11 {width: auto;height:72vh;z-index:998;left:0;top: 0;}
 .et_bg11 img {
     position: absolute;
     right: 0;
@@ -882,7 +1002,7 @@
     width: auto;
     height: 100%;
 }
-.et_bg12 {width: auto;height:71%;z-index:998;left:0;top: 0;}
+.et_bg12 {width: auto;height:72vh;z-index:998;left:0;top: 0;}
 .et_bg12 img {
     position: absolute;
     right: 0;
@@ -893,17 +1013,17 @@
 .et_bg7_cover {
     position: absolute;
     left: 0;
-    bottom: 30%;
-    width: 4.78rem;
-    height: 2.1rem;
+    bottom: 30vh;
+    width: 63.8vw;
+    height: 27vw;
     opacity: 0;
 }
 .et_bg13_cover {
     position: absolute;
     left: 0;
-    bottom: 40%;
-    width: 4.78rem;
-    height: 2.1rem;
+    bottom: 40vh;
+    width: 63.8vw;
+    height: 27vw;
     opacity: 0;
 }
 .et_bg13_cover img {
@@ -930,31 +1050,43 @@
 	animation: slide-in-left 1s ease-out ;
     animation-fill-mode: forwards;
 }
-.et_txt13 {left: 0.9rem;bottom:32%; opacity: 0;}.et_txt13 img{width:2.55rem;height:auto; vertical-align: top;}
-.et_txt7 {left: 0.64rem;bottom:3rem; opacity: 0;}.et_txt7 img{width:3.86rem;height:auto; vertical-align: top;}
-.et_txt11 {left: 0.64rem;bottom:3.2rem; opacity: 0;}.et_txt11 img{width:3.86rem;height:auto; vertical-align: top;}
+.et_txt13 {left: 10vw;bottom: 30vh; opacity: 0;}.et_txt13 img{width:2.55rem;height:auto;}
+.et_txt14 {left: 16vw;bottom: 38vh; opacity: 0;}.et_txt14 img{width:34vw;height:auto;}
+.et_txt7 {left: 10vw;bottom:27vh; opacity: 0;}.et_txt7 img{width:47.4vw;height:auto; }
+.et_txt9 {left: 10vw;bottom:30vh; opacity: 0;}.et_txt9 img{width:39.2vw;height:auto; }
+.et_txt11 {left: 10vw;bottom:30vh; opacity: 0;}.et_txt11 img{width:35.3vw;height:auto; }
+.et_txt12 {left: 10vw;bottom:29vh; opacity: 0;}.et_txt12 img{width:35.3vw;height:auto; }
+.et_txt13 {left: 10vw;bottom:29vh; opacity: 0;}.et_txt13 img{width:49vw;height:auto; }
+.swiper-slide-active .et_txt14 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
+.swiper-slide-active .et_txt13 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
+.swiper-slide-active .et_txt12 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt7 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt11 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt13 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
-.et_title7 {left:0;bottom:0.62rem;right:0; margin: auto;}.et_title7 img{width:6rem;height:auto; vertical-align: top;}
-.swiper-slide-active .et_title7 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
-.et_title9 {left:0;bottom:0.62rem;right:0; margin: auto;}.et_title9 img{width:2.5rem;height:auto; vertical-align: top;}
-.et_title13 {left:0;bottom:0.2rem;right:0; margin: auto; opacity: 0;}.et_title13 img{width:4.75rem;height:auto; vertical-align: top;}
+.swiper-slide-active .et_txt9 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
+.et_title7 {left:0;bottom:2vh;right:0; margin: auto;}.et_title7 img{width:80.9vw; vertical-align: top;}
+.et_title8 {left:0;bottom:1vh;right:0; margin: auto;}.et_title8 img{width:80.9vw; vertical-align: top;}
+.et_titledt {bottom: 2vh;left:0;right:0;margin: auto;}.et_titledt img{width: 51.2vw; vertical-align: top;}
+.et_titlewhj {bottom: -1vh;left:0;right:0;margin: auto;}.et_titlewhj img{width: 80.9vw; vertical-align: top;}
+.swiper-slide-active .et_title7, .swiper-slide-active .et_title8, .swiper-slide-active .et_title9, .swiper-slide-active .et_titledt, .swiper-slide-active .et_titlejy {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
+.et_title9 {left:0;bottom:-1vh;right:0; margin: auto;}.et_title9 img{width:31.4vw;}
+.et_titlejy {left:0;bottom:-1vh;right:0; margin: auto;}.et_titlejy img{width:80.9vw;}
+.et_title13 {left:0;bottom:0;right:0; margin: auto; opacity: 0;}.et_title13 img{width:63.3vw;height:auto; vertical-align: top;}
 .swiper-slide-active .et_title13 {
     -webkit-animation: slide-in-right 1s ease-out ;
 	animation: slide-in-right 1s ease-out ;
     animation-fill-mode: forwards;}
 
-.et_bg8 {width: 7.5rem;height:70%; background-image: url(image/13-1.jpg); background-position: 0 center; background-size:cover; background-repeat: no-repeat;left: 0;top:0;z-index:998; overflow: hidden;}
-.et_bg9 {width: 7.5rem;height:70%; background-image: url(image/14-1.jpg); background-position: 0 center; background-size:cover; background-repeat: no-repeat;left: 0;top:0;z-index:998; overflow: hidden;}
-.et_bg10 {width: 7.5rem;height:70%; background-image: url(image/15-1.jpg); background-position: 0 center; background-size:cover; background-repeat: no-repeat;left: 0;top:0;z-index:998; overflow: hidden;}
-.et_bg13 {width: 7.5rem;height:65%; left: 0;top:0;z-index:998; overflow: hidden;}
+.et_bg8 {left: 0;top: 0; width: 100vw;} .et_bg8 img {width: 100vw;height: 72vh; position: absolute;top:0;left:0;}
+.et_bg9 {left:0; right: 0;margin: auto;top: 0} .et_bg9 img {width: 100vw; height: 72vh; position: absolute; top:0; left:0;}
+.et_bg10 {left:0; right:0; margin: auto; top: 0;} .et_bg10 img {width: 100vw; height: 72vh; position: absolute; top:0; left:0;}
+.et_bg13 {width: 100vw;height: 65vh; left: 0;top:0;z-index:998; overflow: hidden;}
 .et_bg13 img {position: absolute; left: 0;top: 0;width: 100%;height: 100%}
 .et_text13 {
-    width: 2.89rem;
-    height: 1.33rem;
+    width: 38.6vw;
+    height: 17.8vw;
     position: absolute;
-    bottom: 22%;
+    bottom: 22vh;
     left:0;
     right: 0;
     margin: auto;
@@ -963,7 +1095,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100%;et_title13 pa
     height: 100%;
 }
 .swiper-slide-active .et_text13 {
@@ -971,8 +1103,7 @@
 }
 .et_txt8 {left: 0;top:5.1rem;}.et_txt8 img{width:5.28rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_txt8 {-webkit-animation:fadeInLeft 1s .6s ease both;-moz-animation:fadeInLeft 1s .6s ease both;}
-.et_title8 {left:0.9rem;top:3.1rem;}.et_title8 img{width:3.76rem;height:auto; vertical-align: top;}
-.swiper-slide-active .et_title8 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
+
 
 .ba4_1 {width: 2.48rem;height:1.67rem; background-image: url(image/ba4_1.png); background-size:2.48rem 1.67rem; background-repeat: no-repeat; left: 0.92rem;top:1.24rem;z-index:887;}
 .swiper-slide-active .ba4_1 {-webkit-animation:fadeIn .7s .4s ease both;-moz-animation:fadeIn .7s .4s ease both;}
@@ -1019,19 +1150,52 @@
 .ba5_2 {width:3.13rem;height:6.28rem; background-image: url(image/ba5_2.png); background-size:cover; background-repeat: no-repeat;left:0;top:4.12rem}
 .swiper-slide-active .ba5_2 {-webkit-animation:fadeInLeft 1s .8s ease both;-moz-animation:fadeInLeft 1s .8s ease both;}
 
-.bg7 {width: 7.5rem;height:100%; } .bg7 img{position: absolute; left:0; top:0;width: 100%; height: 100%;}
+.bg7 {width: 7.5rem;height:100%; } .bg7 img{position: absolute; left:0; top:0;width: 100vw; height: 100%;}
 .bg8 {width: 7.5rem;height:100%; } .bg8 img{position: absolute; left:0; top:0;width: 100%; height: 100%;}
-.bg7_bg {width:1.69rem; height: 0.57rem; position: absolute; right:1.14rem; top: 0.38rem;} .bg7_bg img {position: absolute; left: 0; top: 0;width: 100%; height: 100%}
+.bg9 {width: auto;height:72vh;z-index:998;left:0;top: 0;}.bg9 img {position: absolute; right: 0; top: 0; width: auto; height: 100%;}
+.bg9_honor {width: 10vw;left: 43.6vw; bottom: 30vh;}
+.animation2 {-webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
+.swiper-slide-active .bg9_honor {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both; }
+.bg9_title {width: 34vw; height:6.7vw; left: 31.7vw; bottom: 23vh;}
+
+.swiper-slide-active .bg9_title, .swiper-slide-active .honor_1  {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both; -webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
+@-webkit-keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+.honor_1 {width: 91.7vw; height: 30.9vw; left: 4.13vw; bottom: 1vh;}
+.honor_2 {width: 91.4vw; height: 45vw; left: 4.13vw; bottom: -1.5vh;opacity: 0;}
+.swiper-slide-active .honor_2 {-webkit-animation: slide-in-right 3s ease-out 2.3s ;animation: slide-in-right 3s ease-out 2.3s ;animation-fill-mode: forwards;}
+.bg7_bg { position: absolute; right:37vw; top: 3vh;} .bg7_bg img {position: absolute; left: 0; top: 0;width:23.4vw;}
 .swiper-slide-active .bg7_bg {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
 
-.bg7_cover {width: 4.4rem; height: 8rem; left:0;top:0;right:0;bottom:0;margin: auto;}.bg7_cover img {position: absolute; left:0; top: 0; width: 100%; height: 100%;}
-.bg7_title {width: 2.36rem; height: 0.54rem; position: absolute;left: 2.5rem; top:3.28rem;}.bg7_title img {position: absolute; left:0; top: 0; width: 100%; height: 100%;}
+.bg7_cover {width: 65vw;height: 106vw; left:0;top:0;right:0;bottom:0;margin: auto;}.bg7_cover img {position: absolute; left:0; top: 0; width: 100%; height: 100%;}
+.bg7_title {position: absolute;left: 0; top:24vh; right:0; margin: auto;}.bg7_title img {position: absolute; left:0; top: 0; right:0; margin: auto;width: 33vw;}
 .swiper-slide-active .bg7_title {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
 .swiper-slide-active .bg7_desc {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
 .swiper-slide-active .bg8_desc {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
-.bg7_desc {width: 2.91rem;height: 3.19rem; left: 2.38rem; top: 4.06rem;}.bg7_desc img {position: absolute; left:0; top: 0; width: 100%; height: 100%;}
-.bg8_desc{width: 2.91rem;height: 5rem; left: 2.38rem; top: 4.06rem;}.bg8_desc img {position: absolute; left:0; top: 0; width: 100%; height: 100%;}
-
+.bg7_desc {left: 0; top: 30vh; right:0; margin: auto;}.bg7_desc img {position: absolute; left:0; top: 0;right:0; margin: auto; width: 38.9vw;}
+.bg8_desc {left: 0; top: 30vh; right:0; margin: auto;}.bg8_desc img {position: absolute; left:0; top: 0;right:0; margin: auto; width: 39.3vw;}
 .ba6_1 {width:3.5rem;height:1.78rem; background-image: url(image/ba6_1.png); background-size:cover; background-repeat: no-repeat;left:0.55rem;top:1.55rem}
 .swiper-slide-active .ba6_1 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 .ba6_2 {width:4.84rem;height:6.57rem; background-image: url(image/ba6_2.png); background-size:cover; background-repeat: no-repeat;left:0;top:4.12rem}
@@ -1039,9 +1203,103 @@
 .ba6_3 {width:5rem;height:6.57rem; background-image: url(image/ba6_3.png); background-size:cover; background-repeat: no-repeat;left:0;top:4.12rem}
 .swiper-slide-active .ba6_3 {-webkit-animation:fadeInLeft 1s .8s ease both;-moz-animation:fadeInLeft 1s .8s ease both;}
 
-.bg8 {width: 7.5rem;height:100%; left: 0;top:0;z-index:998; overflow: hidden;background-image: url(image/bg1.jpg); background-size:cover; background-repeat: no-repeat;}
 .ba7_1 {width:6.75rem;height:10.33rem;left:0.38rem;top:50%;margin-top: -5.16rem;background-image: url(image/ba7_1.png); background-size:cover;}
 .swiper-slide-active .ba7_1 {-webkit-animation:pulse2 1s .2s ease both;-moz-animation:pulse2 1s .2s ease both;}
+.bg10 {width: 100%;height: 100%; left: 0;top: 0;}
+.bg10 img {position: absolute; left: 0;top: 0;width:100%; height: 100%;}
+.bg10_cover {
+    width: 100%;height: 100%;left: 0;top:0;opacity: 0.8;
+}
+.search {
+    display: block;
+    width: 66vw;
+    height: 64vw;
+    left: 0;
+    right:0;
+    margin:auto;
+    top: 12.27vh;
+}
+.bg10_map {
+    width: 66vw;
+    height: 64vw;
+    left: 0;
+    top:0;
+}
+.bg10_logo {
+    width: 26.5vw;
+    height: 32.4vw;
+    left: 48vw;
+    top: 20.27vh;
+}
+.bg10_nav {
+    width: 57.3vw;
+    height: 11.8vw;
+    left: 0;
+    top: 54vh;
+    right: 0;
+    margin: auto;
+}
+.bg10_navprompt {
+    width: 22.4vw;
+    height: 5.2vw;
+    right: 21vw;
+    top: 63vh;
+    opacity: 0;
+}
+.bg10_call {
+    width: 8.1vw;
+    height: 8.1vw;
+    bottom: 19vh;
+    left: 23vw;
+}
+.call_phone {
+    display: block;
+    width: 46.5vw;
+    height: 10.8vw;
+    right: 19vw;
+    bottom: 17vh;}
+.bg10_number {
+    width: 46.5vw;
+    height: 10.8vw;
+    left:0;
+    top: 0;
+    opacity: 0;
+}
+.swiper-slide-active .bg10_cover {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
+.swiper-slide-active .bg10_map {-webkit-animation:fadeIn .7s 1s ease both;-moz-animation:fadeIn .7s 1s ease both;}
+.swiper-slide-active .bg10_logo {-webkit-animation:fadeIn .7s 1.1s ease both;-moz-animation:fadeIn .7s 1.1s ease both;}
+.swiper-slide-active .bg10_nav {-webkit-animation:fadeIn .7s 1.2s ease both;-moz-animation:fadeIn .7s 1.2s ease both;}
+.swiper-slide-active .bg10_navprompt {opacity: 1;-webkit-animation: pulsate-bck 0.5s ease-in-out infinite 1.2s;animation: pulsate-bck 0.5s ease-in-out infinite 1.2s; animation-fill-mode: forwards}
+.swiper-slide-active .bg10_call {-webkit-animation:fadeIn .7s 1.2s ease both;-moz-animation:fadeIn .7s 1.2s ease both;}
+.swiper-slide-active .bg10_number { opacity: 1;-webkit-animation: pulsate-bck 0.5s ease-in-out infinite 1.2s;animation: pulsate-bck 0.5s ease-in-out infinite 1.2; animation-fill-mode: forwards}
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @-webkit-keyframes pulse2{
 0%{-webkit-transform:scale(0.5)}
 50%{-webkit-transform:scale(1.1)}
@@ -1185,15 +1443,12 @@
             opacity: 0;
         }
     }
-    .position {-webkit-animation:fadeInDown2 1s .2s infinite linear;-moz-animation:fadeInDown2 1s .2s infinite linear;    width: 1.6rem;
-    height: 2.64rem;
-    background-image: url(image/position.png);
-    background-repeat: no-repeat;
-    background-position: 0 -0.64rem;
-    background-size: 1.6rem 2.64rem;
-    left: 3.7rem;
-    top: 1.3rem;
-}
+    .position {
+        -webkit-animation:fadeInDown2 1s .2s infinite linear;-moz-animation:fadeInDown2 1s .2s infinite linear;    
+        width: 26.5vw;
+        right: 22vw;
+        top: 13vh;
+    }
     @-webkit-keyframes circle {
         0% {
             -webkit-transform: rotate(0deg);
@@ -1241,8 +1496,20 @@
         100%{right: -75%}
     }
 
+    @-webkit-keyframes zuo2{
+        0%{right:0}
+        60%{right:-349.2vw;}
+        100%{right: -249.2vw}
+    }
+    @-moz-keyframes zuo2{
+        0%{right:0}
+        60%{right:-349.2vw;}
+        100%{right: -249.2vw}
+    }
+
 .swiper-slide-active .scstyle2 {-webkit-animation:zuo 6s .2s linear both;-moz-animation:zuo 6s .2s linear both}
 .swiper-slide-active .scstyle5 {-webkit-animation:zuo1 6s .2s linear both;-moz-animation:zuo1 6s .2s linear both}
+.swiper-slide-active .scstyle6 {-webkit-animation:zuo2 6s .2s linear both;-moz-animation:zuo2 6s .2s linear both}
 .swiper-slide-active .scstyle4 {-webkit-animation: scale-down-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-down-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
 
@@ -1313,87 +1580,90 @@
     </div>
     <div class="navbtn pa"></div>
     <div class="navbar pa">
-        <ul class="pa">
-            <div class="bar-list">
-                <li class="cur">
-                        <img src="image/menu-1.png" height="100%" />
-                        <img src="image/menu-zz4.png" class="leftmask" height="100%" />
-                        <img src="image/menu-ubpa.png" class="menu-title1" />
-                        <!-- <p>
-                            <span><i class="mtxt1"></i>
-                            世博蓝图</span>
-                        </p> -->
-                    </li>
-                    <li class="curright">
-                        <img src="image/menu-2.png" height="100%" alt="">
-                        <img src="image/menu-zz3.png" class="rightmask" height="100%" />
-                        <img src="image/menu-jt.png" class="menu-title2"/>
-                        <!-- <p>
-                            <span><i class="mtxt2"></i>
-                            便捷交通</span>
-                        </p> -->
-                    </li>
-            </div>
-            <div class="bar-lists">
-                <li class="cur">
-                    <img src="image/menu-3.png" height="100%" alt="">
-                    <img src="image/menu-zz2.png" class="leftmask" height="100%" />
-                    <img src="image/menu-kjys.png" class="menu-title1"/>
-                    <!-- <p>
-                        <span><i class="mtxt3"></i>
-                        8大优势</span>
-                    </p> -->
-                </li>
-                <li class="curright">
-                    <img src="image/menu-4.png" height="100%" alt="">
-                    <img src="image/menu-zz1.png" class="rightmask" height="100%" />
-                    <img src="image/menu-xmgl.png" class="menu-title2"/>
-                    <!-- <p>
-                        <span><i class="mtxt4"></i>
-                        项目概览</span>
-                    </p> -->
-                </li>
-            </div>
-            <div class="bar-list">
-                <li class="cur">
-                    <img src="image/menu-5.png" height="100%" alt="">
-                    <img src="image/menu-zz4.png" class="leftmask" height="100%" />
-                    <img src="image/menu-qyjy.png" class="menu-title1" />
-                    <!-- <p>
-                        <span><i class="mtxt5"></i>
-                        项目荣誉</span>
-                    </p> -->
-                </li>
-                <li class="curright">
-                    <img src="image/menu-6.png" height="100%" alt="">
-                    <img src="image/menu-zz3.png" class="rightmask" height="100%" />
-                    <img src="image/menu-xmry.png" class="menu-title2" />
-                    <!-- <p>
-                        <span><i class="mtxt6"></i>
-                        集团介绍</span>
-                    </p> -->
-                </li>
-            </div>
-            <div class="bar-lists">
-                <li class="cur">
-                    <img src="image/menu-7.png" height="100%" alt="">
-                    <img src="image/menu-zz2.png"class="leftmask" height="100%" />
-                    <img src="image/menu-jtbj.png" class="menu-title1" />
-                    <!-- <p>
-                        <span><i class="mtxt7"></i>
-                        在线洽谈</span>
-                    </p> -->
-                </li>
-                <li class="curright">
-                    <img src="image/menu-8.png" height="100%" alt="" />
-                    <img src="image/menu-back.png" class="menu-title2" />
-                    <!-- <p>
-                        <i class="mtxt8"></i>
-                    </p> -->
-                </li>
-            </div>
-            
-        </ul>
+                <ul class="pa">
+                        <div class="navbar_cover">
+                        <div class="bar-list">
+                            <li class="cur">
+                                    <img src="image/menu-1.png" class="menu1" height="100%" />
+                                    <img src="image/menu-zz4.png" class="leftmask1" height="100%" />
+                                    <img src="image/menu-ubpa.png" class="menu-title1" />
+                                    <!-- <p>
+                                        <span><i class="mtxt1"></i>
+                                        世博蓝图</span>
+                                    </p> -->
+                                </li>
+                                <li class="curright">
+                                    <img src="image/menu-2.png" class="menu2" height="100%" alt="">
+                                    <img src="image/menu-zz3.png" class="rightmask2" height="100%" />
+                                    <img src="image/menu-jt.png" class="menu-title2"/>
+                                    <!-- <p>
+                                        <span><i class="mtxt2"></i>
+                                        便捷交通</span>
+                                    </p> -->
+                                </li>
+                        </div>
+                        <div class="bar-lists">
+                            <li class="cur">
+                                <img src="image/menu-3.png" class="menu3" height="100%" alt="">
+                                <img src="image/menu-zz2.png" class="leftmask3" height="100%" />
+                                <img src="image/menu-kjys.png" class="menu-title3"/>
+                                <!-- <p>
+                                    <span><i class="mtxt3"></i>
+                                    8大优势</span>
+                                </p> -->
+                            </li>
+                            <li class="curright currights">
+                                <img src="image/menu-4.png" height="100%" class="menu4" alt="">
+                                <img src="image/menu-zz1.png" class="rightmask4" height="100%" />
+                                <img src="image/menu-xmgl.png" class="menu-title4"/>
+                                <!-- <p>
+                                    <span><i class="mtxt4"></i>
+                                    项目概览</span>
+                                </p> -->
+                            </li>
+                        </div>
+                        <div class="bar-list">
+                            <li class="cur">
+                                <img src="image/menu-5.png" class="menu5" height="100%" alt="">
+                                <img src="image/menu-zz4.png" class="leftmask5" height="100%" />
+                                <img src="image/menu-qyjy.png" class="menu-title5" />
+                                <!-- <p>
+                                    <span><i class="mtxt5"></i>
+                                    项目荣誉</span>
+                                </p> -->
+                            </li>
+                            <li class="curright">
+                                <img src="image/menu-6.png" class="menu6" height="100%" alt="">
+                                <img src="image/menu-zz3.png" class="rightmask6" height="100%" />
+                                <img src="image/menu-xmry.png" class="menu-title6" />
+                                <!-- <p>
+                                    <span><i class="mtxt6"></i>
+                                    集团介绍</span>
+                                </p> -->
+                            </li>
+                        </div>
+                        <div class="bar-lists">
+                            <li class="cur">
+                                <img src="image/menu-7.png" class="menu7" height="100%" alt="">
+                                <img src="image/menu-zz2.png"class="leftmask7" height="100%" />
+                                <img src="image/menu-jtbj.png" class="menu-title7" />
+                                <!-- <p>
+                                    <span><i class="mtxt7"></i>
+                                    在线洽谈</span>
+                                </p> -->
+                            </li>
+                            <li class="curright currights">
+                                <img src="image/menu-8.png" class="menu8" height="100%" alt="" />
+                                <img src="image/menu-back.png" class="menu-title8" />
+                                <!-- <p>
+                                    <i class="mtxt8"></i>
+                                </p> -->
+                            </li>
+                        </div>
+                    </div>
+                    </ul>
+        
+        
     </div><!--导航-->
     <div class="swiper-container">
         <div class="btnplay btnCur"></div>
@@ -1401,24 +1671,20 @@
             <div class="swiper-slide">
                 <div class="bg2 pa scstyle2"><img src="image/2-2.jpeg" alt=""></div><!--xianshilogo-->
                 <div class="bg2_shadow">
-                    <div class="txt1 pa"></div>
+                    <img src="image/2-1.png" class="txt1 pa" /> 
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="bg3 pa scstyle4">
-                    <div class="ba1_1 pa"></div>
-                    <div class="ba1_3 pa"></div>
-                </div>
+                <img src="image/3-3.png" class="bg3 pa scstyle4" />
+                <img src="image/3-1.png" class="ba1_1 pa" />
+                <img src="image/3-2.png" class="ba1_3 pa" />
             </div>
             <div class="swiper-slide">
                 <div class="bg4 pa">
-                    <div class="ba2_4 pa">
-                        <div class="posi_cont">
-                            <div class="position pa"></div>
-                        </div>
-                    </div>
-                    <div class="add-title"></div>
-                    <div class="add-desc"></div>
+                    <img src="image/4-1.png" class="ba2_4 pa" />
+                    <img src="image/position.png" class="position pa" />
+                    <img src="image/4-3.png" class="add-title pa" />
+                    <img src="image/4-4.png" class="add-desc pa" />
                 </div>
             </div>
             <!-- <div class="swiper-slide">
@@ -1442,23 +1708,24 @@
             </div> -->
             <div class="swiper-slide">
                 <div class="bg5 pa">
-                    <div class="ba3_1 pa"></div>
-                    <div class="ba3_2 pa" onclick=""></div>
-                    
+                    <img src="image/5-1.png" class="ba3_1 pa" />
+                    <img src="image/5-2.png" class="ba3_2 pa" />
                 </div>
                
             </div>
             <div class="swiper-slide">
                 <div class="et_bg1 pa">
                     <div class="et-box">
-                        <div class="et-text"></div>
-                        <div class="et-enlarge"></div>
+                        <img src="image/6-5.png" class="et-text pa" />
+                        <img src="image/6-6.png" class="et-enlarge pa"/>
                     </div>
-                    <div class="et-top"></div>
-                    <div class="et-down">
+                    <img class="et-top" src="image/6-2.jpeg"/>
+                    <img class="et-left pa" src="image/6-3.png" />
+                    <img class="et-right pa" src="image/6-4.png" />
+                    <!-- <div class="et-down">
                         <div class="et-left"></div>
                         <div class="et-right"></div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <div class="bg5-cover">
@@ -1474,25 +1741,25 @@
             </div>
             <div class="swiper-slide">
                <div class="et_bg2 pa">
-                   <div class="et_text1"></div>
-                   <div class="et_img1"></div>
-                   <div class="et_text2"></div>
-                   <div class="et_img2"></div>
+                   <img src="image/7-2.png" class="et_text1 pa" />
+                   <img src="image/7-3.png" class="et_img1 pa" />
+                   <img src="image/7-1.png" class="et_text2 pa" />
+                   <img src="image/7-4.png" class="et_img2 pa" />
                </div>
             </div>
             <div class="swiper-slide">
                 <div class="et_bg3 pa">
-                    <div class="et_image3"></div>
-                    <div class="et_text3"></div>
-                    <div class="et_text3_2"></div>
+                    <img src="image/8-1.png" class="et_image3 pa" />
+                    <img src="image/8-2.png" class="et_text3 pa" />
+                    <img src="image/8-3.png" class="et_text3_2 pa" />
                 </div>
                 
             </div>
             <div class="swiper-slide">
                 <div class="et_bg4 pa">
-                    <div class="et_text4"></div>
-                    <div class="et_image4"></div>
-                    <div class="et_text4_2"></div>
+                    <img src="image/9-3.png" class="et_text4" />
+                    <img src="image/9-1.png" class="et_image4" />
+                    <img src="image/9-2.png" class="et_text4_2" />
                 </div>
                 
             </div>
@@ -1518,8 +1785,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                    <div class="et_bg6 pa">
-                    </div>
+                    <img src="image/11-1.jpg" class="et_bg6 pa" />
                     <div class="et_cont pa">
                         <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
                         <div class="et_txt7 pa"><img src="image/11-3.png" alt=""></div>
@@ -1533,27 +1799,33 @@
                 <div class="et_cont pa">
                     <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
                     <div class="et_txt7 pa"><img src="image/12-3.png" alt=""></div>
-                    <div class="et_title7 pa"><img src="image/12-4.png" alt=""></div>
+                    <div class="et_title8 pa"><img src="image/12-4.png" alt=""></div>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="et_bg8 pa"></div>
+                <div class="et_bg8 pa">
+                        <img src="image/13-1.jpg"  alt=""/>
+                </div>
                 <div class="et_cont pa">
                     <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
                     <div class="et_txt7 pa"><img src="image/13-2.png" alt=""></div>
-                    <div class="et_title7 pa"><img src="image/13-3.png" alt=""></div>
+                    <div class="et_titledt pa"><img src="image/13-3.png" alt=""></div>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="et_bg9 pa"></div>
+                <div class="et_bg9 pa">
+                    <img src="image/14-1.jpg" />
+                </div>
                 <div class="et_cont pa">
                     <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt7 pa"><img src="image/14-2.png" alt=""></div>
-                    <div class="et_title7 pa"><img src="image/14-3.png" alt=""></div>
+                    <div class="et_txt9 pa"><img src="image/14-2.png" alt=""></div>
+                    <div class="et_titlewhj pa"><img src="image/14-3.png" alt=""></div>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="et_bg10 pa"></div>
+                <div class="et_bg10 pa">
+                    <img src="image/15-1.jpg" />
+                </div>
                 <div class="et_cont pa">
                     <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
                     <div class="et_txt7 pa"><img src="image/15-2.png" alt=""></div>
@@ -1566,8 +1838,8 @@
                 </div>
                 <div class="et_cont pa">
                     <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt11 pa"><img src="image/16-2.png" alt=""></div>
-                    <div class="et_title7 pa"><img src="image/16-3.png" alt=""></div>
+                    <div class="et_txt12 pa"><img src="image/16-2.png" alt=""></div>
+                    <div class="et_titlejy pa"><img src="image/16-3.png" alt=""></div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -1576,7 +1848,7 @@
                 </div>
                 <div class="et_cont pa">
                     <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt11 pa"><img src="image/17-2.png" alt=""></div>
+                    <div class="et_txt13 pa"><img src="image/17-2.png" alt=""></div>
                     <div class="et_title7 pa"><img src="image/17-3.png" alt=""></div>
                 </div>
             </div>
@@ -1586,7 +1858,7 @@
                 </div>
                 <div class="et_cont pa">
                     <div class="et_bg13_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt13 pa"><img src="image/18-2.png" alt=""></div>
+                    <div class="et_txt14 pa"><img src="image/18-2.png" alt=""></div>
                     <div class="et_text13"><img src="image/18-3.png" alt="" /></div>
                     <div class="et_title13 pa"><img src="image/18-4.png" alt=""></div>
                 </div>
@@ -1613,7 +1885,37 @@
                     <div class="bg8_desc pa"><img src="image/20-3.png" alt=""></div>
                 </div>
             </div>
-            <div class=""></div>
+            <div class="swiper-slide">
+                <div class="bg9 pa scstyle6">
+                    <img src="image/21-1.jpg" alt="" />
+                </div>
+                <div class="et_cont pa">
+                    <img src="image/21-2.png" class="bg9_honor pa" />
+                    <img src="image/21-5.png" class="bg9_title pa"/>
+                    <img src="image/21-3.png" class="honor_1 pa"/>
+                    <img src="image/21-4.png" class="honor_2 pa"/>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg10 pa">
+                    <img src="image/22-1.jpg" alt="" />
+                </div>
+                <div class="et_cont10 pa">
+                    <img src="image/19-2.png" class="bg10_cover pa" />
+                    <a href="http://api.map.baidu.com/marker?location=31.208553,121.499422&title=我的位置&content=世博滨江大厦&output=html" class="search pa">
+                        <img src="image/4-1.png" class="bg10_map pa" />
+                    </a>
+                    
+                    <img src="image/position.png" class="bg10_logo pa" />
+                    <img src="image/22-2.png" class="bg10_nav pa" />
+                    <img src="image/22-3.png" class="bg10_navprompt pa"/>
+                    <img src="image/22-5.png" class="bg10_call pa"/>
+                    <a href="tel:02180316666" class="call_phone pa">
+                        <img src="image/22-6.png" class="bg10_number pa"/>
+                    </a>
+                    
+                </div>
+            </div>
             <!-- <div class="swiper-slide">
                 <div class="bg4 pa scstyle">
                     <div class="ba4_1 pa"></div>
@@ -1840,8 +2142,9 @@ function loadComplete(){
             direction: 'vertical',
             effect : 'slide',
             on: {
-                slideChangeTransitionEnd: function(){                    
-                    if ( this.activeIndex === 20) {
+                slideChangeTransitionEnd: function(){    
+                    console.log(this.activeIndex, 'this.activeIndex')                
+                    if ( this.activeIndex === 21) {
                         $(".nextbar").fadeOut();
                     }
                     else {
@@ -1971,8 +2274,8 @@ $(".navbar li").eq(4).on("click",function(){
     // $(".navbar ul li").eq(4).addClass("cur");
 })
 $(".navbar li").eq(5).on("click",function(){
-    // $(".navbar").fadeOut();
-    // swiper.slideTo(18,false);
+    $(".navbar").fadeOut();
+    swiper.slideTo(19,false);
 })
 $(".navbar li").eq(6).on("click",function(){
     $(".navbar").fadeOut();
@@ -1984,8 +2287,8 @@ $(".navbar li").eq(7).on("click",function(){
     $(".navbar").fadeOut();
 })
 $(".qietan").on("click",function(){
-    $(".navbar").fadeOut();
-    swiper.slideTo(20,false);
+    // $(".navbar").fadeOut();
+    // swiper.slideTo(20,false);
     // $(".navbar ul li").removeClass("cur");
     // $(".navbar ul li").eq(7).addClass("cur");
 })
