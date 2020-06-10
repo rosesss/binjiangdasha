@@ -22,7 +22,7 @@
     }
     win.addEventListener('resize', setFont, false)
     doc.addEventListener('DOMContentLoaded', setFont, false)
-})(window, document);
+})(window, document)
 </script>
 <style>
 .wrap {
@@ -30,6 +30,16 @@
     height: 100%;
     overflow: hidden;
     background: #37223A;
+    position: relative;
+}
+.wrap .line_img {
+    position: absolute;
+    bottom: 10vh;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 91.8vw;
+    z-index: 9999;
 }
 .bg1 {width: 7.5rem;height:100%; background: #37223A; background-size:cover; background-repeat: no-repeat;background-position: center center;left: 0;top:0;z-index:999;}
 .logo {width: 2.55rem;height:3rem; background-image: url(image/1.png);background-size:cover; background-repeat: no-repeat; background-position:center top;z-index:997;left: 0;top: 0;right: 0; bottom: 0; margin: auto;}
@@ -493,7 +503,7 @@
 .mtxt8 { background-image: url(image/mtxt8.png);height:0.58rem;}
 .nextbar {width:1.83rem;height: 0.91rem; display:none;left:50%;bottom:-0.02rem;margin-left:-0.89rem; z-index: 999; background-image: url(image/next.png); background-size:1.77rem 0.88rem; background-repeat: no-repeat;-webkit-animation:fadeInUp3 1s 1s ease both;-moz-animation:fadeInUp3 1s 1s ease both;}
 
-.bg3 {width: 100vw; left:0; top: 0;z-index:998;}
+.bg3 {width: 100vw;height: 80%; left:0; top: 0;z-index:998;}
 /* .bg6 {background-image: url(image/3-3.png);} */
 @-webkit-keyframes kenburns-top {
   0% {
@@ -525,11 +535,11 @@
 }
 .ba1_1 {width:59.8vw; right: 2vw; top: 10vh;z-index:999;opacity: 0;}
 
-.swiper-slide-active .ba1_1 {-webkit-animation: slide-in-right 1s 1s ;animation: slide-in-right 1s 1s ;animation-fill-mode: forwards;}
+.swiper-slide-active .ba1_1 {-webkit-animation:fadeInRight 1s .8s ease both;-moz-animation:fadeInRight 1s .8s ease both;animation-fill-mode: forwards;}
 @-webkit-keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(30vw);
+            transform: translateX(30vw);
     opacity: 0;
   }
   100% {
@@ -540,8 +550,8 @@
 }
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(30vw);
+            transform: translateX(30vw);
     opacity: 0;
   }
   100% {
@@ -551,7 +561,7 @@
   }
 }
 
-.ba1_3 {width: 73.4vw;bottom: 6vw; right: 2vw;z-index:9;}
+.ba1_3 {width: 73.4vw;top: 82%; right: 6vw;z-index:9;}
 .swiper-slide-active .ba1_3 {-webkit-animation:fadeInRight 1s .8s ease both;-moz-animation:fadeInRight 1s .8s ease both;}
 
 .bg4 {width: 7.5rem;height:100%;left: 0;top:0;z-index:998;}
@@ -559,14 +569,42 @@
     width: 27.4vw;
     left: 9vw;
     top: 61vh;
+    opacity: 0;
 }
 .add-desc {
     width: 56.6vw;
     left: 9vw;
     top: 72vh;
+    opacity: 0;
 }
-.swiper-slide-active .add-title {-webkit-animation: slide-in-left 2s ; animation: slide-in-left 2s ; animation-fill-mode: forwards;}
-.swiper-slide-active .add-desc {-webkit-animation: slide-in-left 2s ; animation: slide-in-left 2s ; animation-fill-mode: forwards;}
+.swiper-slide-active .add-title {-webkit-animation: slide-in-left1 0.5s linear both; animation: slide-in-left1 0.5s linear both; animation-fill-mode: forwards;}
+.swiper-slide-active .add-desc {-webkit-animation: slide-in-left1 0.8s linear both;
+	        animation: slide-in-left1 0.8s linear both; animation-fill-mode: forwards;}
+@-webkit-keyframes slide-in-left1 {
+  0% {
+    -webkit-transform: translateX(-20vw);
+            transform: translateX(-20vw);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left1 {
+  0% {
+    -webkit-transform: translateX(-20vw);
+            transform: translateX(-20vw);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -619,7 +657,7 @@
 .ba3_5 {width:3.29rem;height:1.77rem; background-image: url(image/ba3_5.png); background-size:3.29rem 1.77rem; background-repeat: no-repeat;left:1.3rem;top:3.1rem;z-index: 998;}
 .swiper-slide-active .ba3_5 {-webkit-animation:fadeIn .7s .2s ease both;-moz-animation:fadeIn .7s .2s ease both;}
 .ba3_menubg1 {width:15.36rem;height: 15.36rem;left: -4.59rem;top: -2.66rem;z-index: 998;} */
-.bg5 {width: 7.5rem;height: 100%;}
+.bg5 {width:100%;height: 100%;left:0;top:0;}
 .ba3_1 {width: 33.7vw; left:10vw; top: 10vh;}
 .ba3_2 {width: 60vw; right: 20vw; top: 25vh;}
 .swiper-slide-active .ba3_2 {
@@ -728,9 +766,9 @@
 .et-top {width: 82.8vw; margin: 10vh auto 0;}
 /* .et-down {display: flex; flex-direction: row;padding:0.8rem 0.5rem;} */
 .et-left {width: 50vw; left: 9vw; bottom: 10vh; }
-.et-right {width: 29.2vw; right: 3vw; bottom: 10vh;}
+.et-right {width: 29.2vw; right: 3vw; bottom: 10vh; opacity: 0;}
 /* .et-right {width: 2rem; height: 3rem; background-image: url(image/6-4.png); background-size: 100% 100%; position: absolute; right: 0.2rem;bottom: 1.2rem;} */
-.swiper-slide-active .et-right {-webkit-animation: slide-in-right 2s ;animation: slide-in-right 2s ;}
+.swiper-slide-active .et-right {-webkit-animation:fadeInRight 1s .6s ease both;-moz-animation:fadeInRight 1s .6s ease both; ;animation-fill-mode: forwards;}
 @-webkit-keyframes slide-in-right {
   0% {
     -webkit-transform: translateX(1000px);
@@ -798,94 +836,123 @@
 
 .et_bg5 {width: 7.5rem;height:100%; left: 0;top:0;z-index:998; overflow: hidden;}
 .et_bg5_title {
-    width: 2rem;
-    height: 0.65rem;
-    background-image: url(image/10-6.png);
-    background-size: 100% 100%;
     position: absolute;
-    right: 1.3rem;
-    top: 0.35rem;
+    right: 14vw;
+    top: 4vh;
+    width: 19.7vw;
 }
 .swiper-slide-active .et_bg5_title {
     -webkit-animation: slide-in-right 2s ;animation: slide-in-right 2s ;
 }
 .et_bg5_circle {
-    width: 9rem;
-    height: 9rem;
-    background: url(image/10-8.png);
-    background-size: 100% 100%;
-    margin-left: -30%;
-    margin-top: 40%;
-    position: relative;
+    left: -25vw;
+    top: 15vh;
+    width: 116vw;
+    height: 116vw;
+}
+.et_bg5_circle .outimg {
+    left: 0;
+    top: 0;
+    width: 116vw;
+    opacity: 0;
+}
+.swiper-slide-active .outimg{
+    -webkit-animation:fadeInDown 3s 1.5s ease both;-moz-animation:fadeInDown 3s 1.5s ease both;
 }
 .et_circle_outside {
-    width: 5.9rem;
-    height: 8.4rem;
-    background-image: url(image/10-3.png);
-    background-size: 100% 100%;
+    left: 39vw;
+    top: 3vh;
+}
+.et_circle_outside_img {
     position: absolute;
-    left: 31%;
-    top: 0.3rem;
+    left: 0;
+    top:0;
+    width: 73vw;
+    opacity: 0;
+}
+.swiper-slide-active .et_circle_outside_img {
+    -webkit-animation:fadeInDown 3s 1.5s ease both;-moz-animation:fadeInDown 3s 1.5s ease both;
 }
 .et_circle_img {
-    width: 5.9rem;
-    height: 8.4rem;
-    background-image: url(image/10-7.png);
-    background-size: 94% 94%;
     position: absolute;
-    left: 34%;
-    top: 0.6rem;
-    background-repeat: no-repeat;
+    left: 40.2vw;
+    top: 6vh;
+    width: 73vw;
 }
-/* .et_cirlce_img1 {
-    width: 2.5rem;
-    height: 2.6rem;
-    background: url(image/space1.png);
-    background-size: 100% 100%;
+.swiper-slide-active .et_circle_img {
+    -webkit-animation:fadeInDown 3s 2.5s ease both;-moz-animation:fadeInDown 3s 2.5s ease both;
+}
+.et_cirlce_img1 {
+    width: 17vw;
+    height: 25vw;
     position: absolute;
-    left: 2rem;
-    top: 0.3rem;
-    -moz-transform:rotate(-11deg);
-    -webkit-transform:rotate(-11deg);
-    -o-transform:rotate(-11deg);
-    -ms-transform:rotate(-11deg);
-    transform:rotate(-11deg);
+    left: 7vw;
+    top: 0vh;
 }
 .et_cirlce_img2 {
-    width: 2.5rem;
-    height: 2.6rem;
-    background: url(image/space2.png);
-    background-size: 100% 100%;
+    width: 18vw;
+    height: 17vh;
     position: absolute;
-    left: 2rem;
-    top: 0.3rem;
-    -moz-transform:rotate(-11deg);
-    -webkit-transform:rotate(-11deg);
-    -o-transform:rotate(-11deg);
-    -ms-transform:rotate(-11deg);
-    transform:rotate(-11deg);
-} */
+    left: 27vw;
+    top: 2vh;
+    -moz-transform:rotate(22deg);
+    -webkit-transform:rotate(22deg);
+    -o-transform:rotate(22deg);
+    -ms-transform:rotate(22deg);
+    transform:rotate(22deg);
+}
+.et_cirlce_img3 {
+    width: 21vw;
+    height: 10.5vh;
+    position: absolute;
+    right: -65vw;
+    top: 11vh;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+.et_cirlce_img4 {
+    width: 19vw;
+    height: 14vh;
+    position: absolute;
+    right: -71vw;
+    top: 23vh;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90 deg);
+}
+.et_cirlce_img5 {
+    width: 19vw;
+    height: 14vh;
+    position: absolute;
+    right: -56vw;
+    left: 46vw;
+    top: 36vh;
+    -moz-transform:rotate(120deg);
+    -webkit-transform:rotate(120deg);
+    -o-transform:rotate(120deg);
+    -ms-transform:rotate(120deg);
+    transform:rotate(120 deg);
+}
 .et_circle_line {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(image/10-5.png);
-    background-size: 100% 100%;
+    width: 116vw;
     left: 0;
     top: 0;
     opacity: 0;
 }
 .swiper-slide-active .et_circle_line {
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
     animation-fill-mode: forwards;
 }
 .et_circle_width {
+    width: 24.4vw;
     position: absolute;
-    width: 2rem;
-    height: 2rem;
-    background: url(image/10-2.png);
-    background-size: 100% 100%;
     left: 0;
     top: 0;
     right: 0;
@@ -894,16 +961,13 @@
     opacity: 0;
 }
 .swiper-slide-active .et_circle_width {
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s;
     animation-fill-mode: forwards;
 }
 .et_center_circle {
     position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url(image/10-1.png);
-    background-size: 100% 100%;
+    width: 16.53vw;
     left: 0;
     top: 0;
     right: 0;
@@ -913,10 +977,7 @@
 }
 .et_center_logo {
     position: absolute;
-    width: 0.5rem;
-    height: 0.8rem;
-    background: url(image/1.png);
-    background-size: 100% 100%;
+    width: 6.6vw;
     left: 0;
     top: 0;
     right: 0;
@@ -925,8 +986,8 @@
     opacity: 0;
 }
 .swiper-slide-active .et_center_logo {
-    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s;
-    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5ss;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s;
     animation-fill-mode: forwards;
 }
 @-webkit-keyframes fade-in {
@@ -946,8 +1007,8 @@
     }
 }
 .swiper-slide-active .et_center_circle {
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s;
     animation-fill-mode: forwards;
 }
 @-webkit-keyframes scale-in-center {
@@ -1037,6 +1098,9 @@
     position: absolute;
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     width: 100%;
     height: 100%;
 }
@@ -1052,7 +1116,7 @@
 }
 .et_txt13 {left: 10vw;bottom: 30vh; opacity: 0;}.et_txt13 img{width:2.55rem;height:auto;}
 .et_txt14 {left: 16vw;bottom: 38vh; opacity: 0;}.et_txt14 img{width:34vw;height:auto;}
-.et_txt7 {left: 10vw;bottom:27vh; opacity: 0;}.et_txt7 img{width:47.4vw;height:auto; }
+.et_txt7 {left: 0;bottom:0;right:0;top: 0; margin: auto; opacity: 0;}.et_txt7 img{width:47.4vw;height:auto; }
 .et_txt9 {left: 10vw;bottom:30vh; opacity: 0;}.et_txt9 img{width:39.2vw;height:auto; }
 .et_txt11 {left: 10vw;bottom:30vh; opacity: 0;}.et_txt11 img{width:35.3vw;height:auto; }
 .et_txt12 {left: 10vw;bottom:29vh; opacity: 0;}.et_txt12 img{width:35.3vw;height:auto; }
@@ -1064,14 +1128,15 @@
 .swiper-slide-active .et_txt11 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt13 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt9 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
-.et_title7 {left:0;bottom:2vh;right:0; margin: auto;}.et_title7 img{width:80.9vw; vertical-align: top;}
-.et_title8 {left:0;bottom:1vh;right:0; margin: auto;}.et_title8 img{width:80.9vw; vertical-align: top;}
-.et_titledt {bottom: 2vh;left:0;right:0;margin: auto;}.et_titledt img{width: 51.2vw; vertical-align: top;}
-.et_titlewhj {bottom: -1vh;left:0;right:0;margin: auto;}.et_titlewhj img{width: 80.9vw; vertical-align: top;}
-.swiper-slide-active .et_title7, .swiper-slide-active .et_title8, .swiper-slide-active .et_title9, .swiper-slide-active .et_titledt, .swiper-slide-active .et_titlejy {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
+.et_title7 {left:0;bottom:-1vh;right:0; margin: auto;}.et_title7 img{width:80.9vw; }
+.et_title8 {left:0;bottom:1vh;right:0; margin: auto;}.et_title8 img{width:80.9vw; }
+.et_titledt {bottom: 6vh;left:0;right:0;margin: auto;}.et_titledt img{width: 51.2vw; }
+.et_titlewhj {bottom: 2vh;left:0;right:0;margin: auto;}.et_titlewhj img{width: 80.9vw;}
+.et_title_13 {bottom: 8vh;left:0;right:0;margin: auto;}.et_title_13 img{width: 80.9vw;}
+.swiper-slide-active .et_title7, .swiper-slide-active .et_title8, .swiper-slide-active .et_title9, .swiper-slide-active .et_titledt, .swiper-slide-active .et_titlejy, .swiper-slide-active .et_title_13 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 .et_title9 {left:0;bottom:-1vh;right:0; margin: auto;}.et_title9 img{width:31.4vw;}
-.et_titlejy {left:0;bottom:-1vh;right:0; margin: auto;}.et_titlejy img{width:80.9vw;}
-.et_title13 {left:0;bottom:0;right:0; margin: auto; opacity: 0;}.et_title13 img{width:63.3vw;height:auto; vertical-align: top;}
+.et_titlejy {left:0;bottom:4vh;right:0; margin: auto;}.et_titlejy img{width:80.9vw;}
+.et_title13 {left:0;bottom:0;right:0; margin: auto; opacity: 0;}.et_title13 img{width:63.3vw;height:auto; }
 .swiper-slide-active .et_title13 {
     -webkit-animation: slide-in-right 1s ease-out ;
 	animation: slide-in-right 1s ease-out ;
@@ -1150,8 +1215,8 @@
 .ba5_2 {width:3.13rem;height:6.28rem; background-image: url(image/ba5_2.png); background-size:cover; background-repeat: no-repeat;left:0;top:4.12rem}
 .swiper-slide-active .ba5_2 {-webkit-animation:fadeInLeft 1s .8s ease both;-moz-animation:fadeInLeft 1s .8s ease both;}
 
-.bg7 {width: 7.5rem;height:100%; } .bg7 img{position: absolute; left:0; top:0;width: 100vw; height: 100%;}
-.bg8 {width: 7.5rem;height:100%; } .bg8 img{position: absolute; left:0; top:0;width: 100%; height: 100%;}
+.bg7 {width: 100%;height:100%; left:0; top: 0;} .bg7 img{position: absolute; left:0; top:0;width: 100vw; height: 100%;}
+.bg8 {width: 100%;height:100%; left:0; top:0;} .bg8 img{position: absolute; left:0; top:0;width: 100%; height: 100%;}
 .bg9 {width: auto;height:72vh;z-index:998;left:0;top: 0;}.bg9 img {position: absolute; right: 0; top: 0; width: auto; height: 100%;}
 .bg9_honor {width: 10vw;left: 43.6vw; bottom: 30vh;}
 .animation2 {-webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
@@ -1184,7 +1249,7 @@
   }
 }
 .honor_1 {width: 91.7vw; height: 30.9vw; left: 4.13vw; bottom: 1vh;}
-.honor_2 {width: 91.4vw; height: 45vw; left: 4.13vw; bottom: -1.5vh;opacity: 0;}
+.honor_2 {width: 91.3vw; height: 43vw; left: 4.13vw; bottom: 2.5vh;opacity: 0;}
 .swiper-slide-active .honor_2 {-webkit-animation: slide-in-right 3s ease-out 2.3s ;animation: slide-in-right 3s ease-out 2.3s ;animation-fill-mode: forwards;}
 .bg7_bg { position: absolute; right:37vw; top: 3vh;} .bg7_bg img {position: absolute; left: 0; top: 0;width:23.4vw;}
 .swiper-slide-active .bg7_bg {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
@@ -1506,8 +1571,29 @@
         60%{right:-349.2vw;}
         100%{right: -249.2vw}
     }
-
+    @-webkit-keyframes zuo3{
+        0%{right:0}
+        60%{right:-113.2vw;}
+        100%{right: -93.2vw}
+    }
+    @-moz-keyframes zuo3{
+        0%{right:0}
+        60%{right:-113.2vw;}
+        100%{right: -93.2vw}
+    }
+    @-webkit-keyframes zuo4{
+        0%{right:0}
+        60%{right:-126.1vw;}
+        100%{right: -93.2vw}
+    }
+    @-moz-keyframes zuo4{
+        0%{right:0}
+        60%{right:-126.1vw;}
+        100%{right: -93.2vw}
+    }
 .swiper-slide-active .scstyle2 {-webkit-animation:zuo 6s .2s linear both;-moz-animation:zuo 6s .2s linear both}
+.swiper-slide-active .scstyle7 {-webkit-animation:zuo3 6s .2s linear both;-moz-animation:zuo3 6s .2s linear both}
+.swiper-slide-active .scstyle8 {-webkit-animation:zuo4 6s .2s linear both;-moz-animation:zuo4 6s .2s linear both}
 .swiper-slide-active .scstyle5 {-webkit-animation:zuo1 6s .2s linear both;-moz-animation:zuo1 6s .2s linear both}
 .swiper-slide-active .scstyle6 {-webkit-animation:zuo2 6s .2s linear both;-moz-animation:zuo2 6s .2s linear both}
 .swiper-slide-active .scstyle4 {-webkit-animation: scale-down-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -1565,6 +1651,7 @@
 
 <body>
 <div class="wrap pr">
+    <img src="image/line.png" class="line_img" />
     <div class="bg1 pa"><!--loading-->
         <div class="loading pa">
             <div class="logo"></div>
@@ -1765,9 +1852,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="et_bg5 pa">
-                    <div class="et_bg5_title"></div>
-                    <div class="et_bg5_circle">
-                        <div class="et_circle_outside">
+                    <img src="image/10-6.png" alt="" class="et_bg5_title" />
+                    <div class="et_bg5_circle pa">
+                        <img src="image/10-8.png" class="outimg pa" />
+
+                        <div class="et_circle_outside pa">
+                            <img src="image/10-3.png" class="et_circle_outside_img" />
                             <div class="et_cirlce_img1"></div>
                             <div class="et_cirlce_img2"></div>
                             <div class="et_cirlce_img3"></div>
@@ -1776,19 +1866,27 @@
                             <div class="et_cirlce_img6"></div>
                             <div class="et_cirlce_img7"></div>
                         </div>
-                        <div class="et_circle_img"></div>
+                        <img src="image/10-7.png" class="et_circle_img pa" />
+                        <img src="image/10-5.png" class="et_circle_line pa" />
+                        <img src="image/10-2.png" class="et_circle_width pa" />
+                        <img src="image/10-1.png" class="et_center_circle pa" />
+                        <img src="image/1.png" class="et_center_logo pa" />
+                        <!-- <div class="et_circle_img"></div>
                         <div class="et_circle_line"></div>
                         <div class="et_circle_width"></div>
                         <div class="et_center_circle"></div>
-                        <div class="et_center_logo"></div>
+                        <div class="et_center_logo"></div> -->
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                     <img src="image/11-1.jpg" class="et_bg6 pa" />
                     <div class="et_cont pa">
-                        <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
-                        <div class="et_txt7 pa"><img src="image/11-3.png" alt=""></div>
+                        <div class="et_bg7_cover">
+                            <img src="image/12-2.png" alt="" />
+                            <div class="et_txt7 pa"><img src="image/11-3.png" alt=""></div>
+                        </div>
+                        
                         <div class="et_title7 pa"><img src="image/11-4.png" alt=""></div>
                     </div>
                 </div>
@@ -1797,8 +1895,11 @@
                     <img src="image/12-1.jpg"  alt=""/>
                 </div>
                 <div class="et_cont pa">
-                    <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt7 pa"><img src="image/12-3.png" alt=""></div>
+                    <div class="et_bg7_cover">
+                        <img src="image/12-2.png" alt="" />
+                        <div class="et_txt7 pa"><img src="image/12-3.png" alt=""></div>
+                    </div>
+                    
                     <div class="et_title8 pa"><img src="image/12-4.png" alt=""></div>
                 </div>
             </div>
@@ -1807,8 +1908,11 @@
                         <img src="image/13-1.jpg"  alt=""/>
                 </div>
                 <div class="et_cont pa">
-                    <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt7 pa"><img src="image/13-2.png" alt=""></div>
+                    <div class="et_bg7_cover">
+                        <img src="image/12-2.png" alt="" />
+                        <div class="et_txt7 pa"><img src="image/13-2.png" alt=""></div>
+                    </div>
+                    
                     <div class="et_titledt pa"><img src="image/13-3.png" alt=""></div>
                 </div>
             </div>
@@ -1827,8 +1931,11 @@
                     <img src="image/15-1.jpg" />
                 </div>
                 <div class="et_cont pa">
-                    <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt7 pa"><img src="image/15-2.png" alt=""></div>
+                    <div class="et_bg7_cover">
+                        <img src="image/12-2.png" alt="" />
+                        <div class="et_txt7 pa"><img src="image/15-2.png" alt=""></div>
+                    </div>
+                    
                     <div class="et_title9 pa"><img src="image/15-3.png" alt=""></div>
                 </div>
             </div>
@@ -1837,19 +1944,21 @@
                     <img src="image/16-1.jpg"  alt=""/>
                 </div>
                 <div class="et_cont pa">
-                    <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
+                    <div class="et_bg7_cover">
+                        <img src="image/12-2.png" alt="" />
+                    </div>
                     <div class="et_txt12 pa"><img src="image/16-2.png" alt=""></div>
                     <div class="et_titlejy pa"><img src="image/16-3.png" alt=""></div>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="et_bg12 pa scstyle5">
+                <div class="et_bg12 pa scstyle8">
                     <img src="image/17-1.jpg"  alt=""/>
                 </div>
                 <div class="et_cont pa">
                     <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
                     <div class="et_txt13 pa"><img src="image/17-2.png" alt=""></div>
-                    <div class="et_title7 pa"><img src="image/17-3.png" alt=""></div>
+                    <div class="et_title_13 pa"><img src="image/17-3.png" alt=""></div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -2080,6 +2189,14 @@ if(soundStatus==1){
     localStorage.setItem("soundStatus",0);
 }
 
+var obj = document.getElementsByClassName('et_bg12')[0];
+obj.addEventListener('touchstart', function(event) {
+    event.preventDefault();// 阻止浏览器默认事件，重要 
+    // var touch = event.targetTouches[0];
+    // obj.style.left = touch.pageX-50 + 'px';
+    console.log('234dhh')
+        // obj.style.top = touch.pageY-50 + 'px';
+}, false)
 
 ////
 var defaultIrnterval;
@@ -2136,6 +2253,7 @@ var swiper;
 function loadComplete(){
     console.log("加载完成");
     $(".bg1").fadeOut();
+    $(".line_img").fadeOut()
     $(".swiper-container").fadeIn();
     setTimeout(()=>{
         swiper = new Swiper('.swiper-container', {
@@ -2143,7 +2261,13 @@ function loadComplete(){
             effect : 'slide',
             on: {
                 slideChangeTransitionEnd: function(){    
-                    console.log(this.activeIndex, 'this.activeIndex')                
+                    console.log(this.activeIndex, 'this.activeIndex')       
+                    if (this.activeIndex === 0 || this.activeIndex === 17 || this.activeIndex === 18 || this.activeIndex === 20) {
+                        $(".line_img").fadeOut()
+                    }else {
+                        $(".line_img").fadeIn()
+                        $(".line_img").css('z-index',0)
+                    }      
                     if ( this.activeIndex === 21) {
                         $(".nextbar").fadeOut();
                     }
@@ -2151,34 +2275,7 @@ function loadComplete(){
                         $(".nextbar").fadeIn();
                     }
                     console.log(swiper.activeIndex);
-                    if(swiper.activeIndex==1){
-                        // $(".navbar ul li").removeClass("cur");
-                        // $(".navbar ul li").eq(0).addClass("cur");
-                    }
-                    if (swiper.activeIndex==2){
-                        // $(".navbar ul li").removeClass("cur");
-                        // $(".navbar ul li").eq(1).addClass("cur");
-                    }
-                    // if (swiper.activeIndex>=3 && swiper.activeIndex<=11){
-                    //     $(".navbar ul li").removeClass("cur");
-                    //     $(".navbar ul li").eq(2).addClass("cur");
-                    // }
-                    // if (swiper.activeIndex>=12 && swiper.activeIndex<=16){
-                    //     $(".navbar ul li").removeClass("cur");
-                    //     $(".navbar ul li").eq(3).addClass("cur");
-                    // }
-                    // if (swiper.activeIndex==17){
-                    //     $(".navbar ul li").removeClass("cur");
-                    //     $(".navbar ul li").eq(4).addClass("cur");
-                    // }
-                    // if (swiper.activeIndex==18||swiper.activeIndex==19){
-                    //     $(".navbar ul li").removeClass("cur");
-                    //     $(".navbar ul li").eq(5).addClass("cur");
-                    // }
-                    // if (swiper.activeIndex==20){
-                    //     $(".navbar ul li").removeClass("cur");
-                    //     $(".navbar ul li").eq(6).addClass("cur");
-                    // }
+                    
                 },
             }
         });
@@ -2191,7 +2288,7 @@ $(".navbtn").click(function () {
     $(".nextbar").fadeOut();
 })
 
-$(".et-enlarge").click(function () {
+$(".et_bg1").click(function () {
     $(".btnplay").css('display', 'none')
     $(".nextbar").css('display', "none")
     $(".bg5-cover").css('display', "block")
@@ -2328,6 +2425,7 @@ $("#closescale").click(function(){
     $(".navbtn,.nextbar").fadeIn();
     $("#scale_content").fadeOut();
 })
+
 /////
 $(".shuru1,.shuru2,.shuru3").blur(function () {
   setTimeout(function () {
