@@ -273,21 +273,21 @@
     justify-content: center;
 }
 .navbar .bar-list{
-    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;background: #E1B77E;position: relative;
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;position: relative;
 }
 
 .navbar .bar-lists {
-    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;background: #E1B77E;position: relative;
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;position: relative;
 }
 .navbar .bar-list {
-    -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /* -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 .navbar .bar-list .line_move1 {
     position: absolute;
-    left:-3vw;
-    top:0;
+    left: -7vw;
+    top: 1vw;
     right: 0;
     bottom: 0;
     margin:auto;
@@ -306,8 +306,8 @@
 }
 .navbar .bar-list .line_move3 {
     position: absolute;
-    left:-3vw;
-    top:0;
+    left:-5vw;
+    top:1vw;
     right: 0;
     bottom: 0;
     margin:auto;
@@ -325,14 +325,17 @@
     z-index: 999;
 }
 .navbar .bar-lists {
-    -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /* -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 .navbar .bar-list li {flex:1;height: 100%}
 .navbar .bar-lists li{flex:1;height: 100%}
 .navbar ul li.cur {
     position: relative;
+    -webkit-animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes slide-in-right {
@@ -415,9 +418,11 @@
     width: 51.8vw;
 }
 .navbar ul li.curright {
-    /* flex: 1; */
     position: relative;
-    margin-left: -31vw;
+    /* margin-left: -31vw; */
+     -webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-fill-mode: forwards;
 }
 .navbar ul li.currights {
     /* margin-left: -18vw; */
@@ -449,7 +454,11 @@
     width: 58.4vw;
 }
 .navbar ul li.curright .rightmask4 {
-    width: 51.8vw;
+    width: 52.5vw;
+    height: 105%;
+    position: absolute;
+    top: -1vw;
+    right: -1vw;
 }
 .navbar ul li.curright .rightmask6 {
     width: 58.4vw;
@@ -608,13 +617,13 @@
 .add-title {
     width: 27.4vw;
     left: 9vw;
-    top: 61vh;
+    top: 98vw;
     opacity: 0;
 }
 .add-desc {
     width: 56.6vw;
     left: 9vw;
-    top: 72vh;
+    top: 116vw;
     opacity: 0;
 }
 .swiper-slide-active .add-title {-webkit-animation: slide-in-left1 0.5s linear both; animation: slide-in-left1 0.5s linear both; animation-fill-mode: forwards;}
@@ -762,7 +771,7 @@
     0%{-moz-transform:scale(1)}
     100%{-moz-transform:scale(1.03)}
 }
-.swiper-slide-active .et_bg6,.swiper-slide-active .et_bg8,.swiper-slide-active .et_bg9, .swiper-slide-active .et_bg10,.swiper-slide-active .et_bg13,.swiper-slide-active .bg7, .swiper-slide-active .bg10 {-webkit-animation:pulse 3s .2s ease both;-moz-animation:pulse 3s .2s ease both;}
+.swiper-slide-active .et_bg6,.swiper-slide-active .et_bg8,.swiper-slide-active .et_bg9, .swiper-slide-active .et_bg10,.swiper-slide-active .et_bg13,.swiper-slide-active .bg7, .swiper-slide-active .bg10, .swiper-slide-active .bg8 {-webkit-animation:pulse 3s .2s ease both;-moz-animation:pulse 3s .2s ease both;}
 .bg5-cover {position: absolute;left: 0;top: 0; width: 100%; height: 100%;background: #37223A;display: none;z-index: 999;}
 .close-cover {color: #EED3B0;position: absolute;     top: 0.24rem;
     right: 0.36rem;
@@ -805,8 +814,8 @@
 }
 .et-top {width: 82.8vw; margin: 10vh auto 0;}
 /* .et-down {display: flex; flex-direction: row;padding:0.8rem 0.5rem;} */
-.et-left {width: 50vw; left: 9vw; bottom: 10vh; }
-.et-right {width: 29.2vw; right: 3vw; bottom: 10vh; opacity: 0;}
+.et-left {width: 50vw; left: 9vw; top: 109vw; }
+.et-right {width: 29.2vw; right: 3vw; top: 116vw; opacity: 0;}
 /* .et-right {width: 2rem; height: 3rem; background-image: url(image/6-4.png); background-size: 100% 100%; position: absolute; right: 0.2rem;bottom: 1.2rem;} */
 .swiper-slide-active .et-right {-webkit-animation:fadeInRight 1s .6s ease both;-moz-animation:fadeInRight 1s .6s ease both; ;animation-fill-mode: forwards;}
 @-webkit-keyframes slide-in-right {
@@ -843,7 +852,7 @@
 .et_text1 {width: 24.8vw; right: 14vw; top: 4vh;}
 .et_text2 {width: 24.8vw; right: 14vw; top: 47vh;}
 .et_img1 {width: 55.7vw; top: 11vh; left:0;right:0;margin:auto;}
-.et_img2 {width: 96.1vw; top: 54vh; right:0;}
+.et_img2 {width: 74.1vw; top: 52vh; right:0;left: 0;margin: auto;}
 .swiper-slide-active .et_text1 {-webkit-animation: slide-in-right 2s ease-out ; animation: slide-in-right 2s ease-out ;}
 .swiper-slide-active .et_text2 {-webkit-animation: slide-in-right 2s ease-out ; animation: slide-in-right 2s ease-out ;}
 
@@ -853,9 +862,10 @@
 .swiper-slide-active .et_title2 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 
 .et_bg3 {width: 7.5rem;height:100%; left: 0;top:0;z-index:998; overflow: hidden;}
-.et_image3 {width:77.3vw; top: 14vh;left:0;right:0;margin:auto}
-.et_text3 {width:42.6vw; right: 10vw; top:44vh}
-.et_text3_2 {width:42.6vw; right: 10vw; bottom: 10vh}
+.et_image3_box { top: 14vh;left:0;right:0;margin:auto; width: 77.3vw;}
+.et_image3 {width:77.3vw; top: 0;left:0;right:0;margin:auto}
+.et_text3 {width:42.6vw; right: 10vw; top:46vw}
+.et_text3_2 {width:42.6vw; right: 10vw; top: 112vw}
 .swiper-slide-active .et_text3 {-webkit-animation:fadeIn .7s .4s ease both;-moz-animation:fadeIn .7s .4s ease both;}
 .swiper-slide-active .et_text3_2 {-webkit-animation:fadeIn .7s .4s ease both;-moz-animation:fadeIn .7s .4s ease both;}
 .et_txt3 {right: 0;top:3.86rem;}.et_txt3 img{width:4.69rem;height:auto; vertical-align: top;}
@@ -935,7 +945,7 @@
     opacity: 0;
 }
 .et_cirlce_img1 .et_cirlce_img1_title1 {
-    left:6vw;top:13vw;width:17.6vw;
+    left:6vw;top:13vw;width:17.6vw;opacity: 0;
 }
 
 .swiper-slide-active .et_cirlce_img1 img {-webkit-animation:fadeIn 2s 1.5s ease both;-moz-animation:fadeIn 2s 1.5s ease both; animation-fill-mode: forwards;}
@@ -1056,7 +1066,7 @@
     animation-fill-mode: forwards;
 }
 .et_circle_width {
-    width: 24.4vw;
+    width: 34.4vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -1066,9 +1076,9 @@
     opacity: 0;
 }
 .swiper-slide-active .et_circle_width {
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s;
-    animation-fill-mode: forwards;
+    -webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s;
+    animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s;
+    /* animation-fill-mode: forwards; */
 }
 .et_center_circle {
     position: absolute;
@@ -1091,8 +1101,8 @@
     opacity: 0;
 }
 .swiper-slide-active .et_center_logo {
-    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5ss;
-    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s;
+    -webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation-fill-mode: forwards;
 }
 @-webkit-keyframes fade-in {
@@ -1112,8 +1122,8 @@
     }
 }
 .swiper-slide-active .et_center_circle {
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
     animation-fill-mode: forwards;
 }
 @-webkit-keyframes scale-in-center {
@@ -1146,7 +1156,7 @@
 .et_title5 {left:0.7rem;top:1.45rem;}.et_title5 img{width:3.76rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_title5 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 
-.et_bg6 {width: 100vw;height:72vh; left:0; top:0;}
+.et_bg6 {width: 100vw;height:72vh; left:0; top:0;background: url(image/11-1.jpg);background-size: 100% 100%; background-repeat: no-repeat}
 .et_txt6 {left: 0;top:4.61rem;}.et_txt6 img{width:3.28rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_txt6 {-webkit-animation:fadeInLeft 1s .6s ease both;-moz-animation:fadeInLeft 1s .6s ease both;}
 .et_title6 {left: 0.95rem;top: 2.12rem;}.et_title6 img{width:3.76rem;height:auto; vertical-align: top;}
@@ -1197,7 +1207,6 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
 }
 .et_bg7_cover img {
     position: absolute;
@@ -1220,7 +1229,7 @@
     animation-fill-mode: forwards;
 }
 .et_txt13 {left: 10vw;bottom: 30vh; opacity: 0;}.et_txt13 img{width:2.55rem;height:auto;}
-.et_txt14 {left: 16vw;bottom: 38vh; opacity: 0;}.et_txt14 img{width:34vw;height:auto;}
+.et_bg13_cover .et_txt14 {left: 16vw;bottom: 0;top: 0;margin: auto; opacity: 0;width: 34vw;}
 .et_txt7 {left: 0;bottom:0;right:0;top: 0; margin: auto; opacity: 0;}.et_txt7 img{width:47.4vw;height:auto; }
 .et_txt9 {left: 10vw;bottom:30vh; opacity: 0;}.et_txt9 img{width:39.2vw;height:auto; }
 .et_txt11 {left: 10vw;bottom:30vh; opacity: 0;}.et_txt11 img{width:35.3vw;height:auto; }
@@ -1233,15 +1242,15 @@
 .swiper-slide-active .et_txt11 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt13 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt9 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
-.et_title7 {left:0;bottom:-1vh;right:0; margin: auto;}.et_title7 img{width:80.9vw; }
-.et_title8 {left:0;bottom:1vh;right:0; margin: auto;}.et_title8 img{width:80.9vw; }
-.et_titledt {bottom: 6vh;left:0;right:0;margin: auto;}.et_titledt img{width: 51.2vw; }
-.et_titlewhj {bottom: 2vh;left:0;right:0;margin: auto;}.et_titlewhj img{width: 80.9vw;}
+.et_title7 {left:0;top:75vh;right:0; margin: auto;}.et_title7 img{width:80.9vw; }
+.et_title8 {left:0;top:74vh;right:0; margin: auto;}.et_title8 img{width:80.9vw; }
+.et_titledt {top: 72vh;left:0;right:0;margin: auto;}.et_titledt img{width: 51.2vw; }
+.et_titlewhj {top: 76vh;left:0;right:0;margin: auto;}.et_titlewhj img{width: 80.9vw;}
 .et_title_13 {bottom: 8vh;left:0;right:0;margin: auto;}.et_title_13 img{width: 80.9vw;}
 .swiper-slide-active .et_title7, .swiper-slide-active .et_title8, .swiper-slide-active .et_title9, .swiper-slide-active .et_titledt, .swiper-slide-active .et_titlejy, .swiper-slide-active .et_title_13 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
-.et_title9 {left:0;bottom:-1vh;right:0; margin: auto;}.et_title9 img{width:31.4vw;}
-.et_titlejy {left:0;bottom:4vh;right:0; margin: auto;}.et_titlejy img{width:80.9vw;}
-.et_title13 {left:0;bottom:0;right:0; margin: auto; opacity: 0;}.et_title13 img{width:63.3vw;height:auto; }
+.et_title9 {left:0;top:76vh;right:0; margin: auto;}.et_title9 img{width:31.4vw;}
+.et_titlejy {left:0;top:74vh;right:0; margin: auto;}.et_titlejy img{width:80.9vw;}
+.et_title13 {left:0;top:76vh;right:0; margin: auto; opacity: 0;}.et_title13 img{width:63.3vw;height:auto; }
 .swiper-slide-active .et_title13 {
     -webkit-animation: slide-in-right 2s ease-out ;
 	animation: slide-in-right 2s ease-out ;
@@ -1250,13 +1259,12 @@
 .et_bg8 {left: 0;top: 0; width: 100vw;} .et_bg8 img {width: 100vw;height: 72vh; position: absolute;top:0;left:0;}
 .et_bg9 {left:0; right: 0;margin: auto;top: 0} .et_bg9 img {width: 100vw; height: 72vh; position: absolute; top:0; left:0;}
 .et_bg10 {left:0; right:0; margin: auto; top: 0;} .et_bg10 img {width: 100vw; height: 72vh; position: absolute; top:0; left:0;}
-.et_bg13 {width: 100vw;height: 65vh; left: 0;top:0;z-index:998; overflow: hidden;}
-.et_bg13 img {position: absolute; left: 0;top: 0;width: 100%;height: 100%}
+.et_bg13 {width: 100vw;height: 62vh; left: 0;top:0;z-index:998;background: url(image/18-1.jpg);background-size: 100% 100%;background-repeat: no-repeat;}
 .et_text13 {
     width: 38.6vw;
     height: 17.8vw;
     position: absolute;
-    bottom: 22vh;
+    top: 66vh;
     left:0;
     right: 0;
     margin: auto;
@@ -1322,11 +1330,12 @@
 
 .bg7 {width: 100%;height:100%; left:0; top: 0;} .bg7 img{position: absolute; left:0; top:0;width: 100vw; height: 100%;}
 .bg8 {width: 100%;height:100%; left:0; top:0;} .bg8 img{position: absolute; left:0; top:0;width: 100%; height: 100%;}
-.bg9 {width: auto;height:72vh;z-index:998;left:0;top: 0;}.bg9 img {position: absolute; right: 0; top: 0; width: auto; height: 100%;}
-.bg9_honor {width: 10vw;left: 43.6vw; bottom: 30vh;}
+.swiper-slide-active .bg8 {}
+.bg9 {width: auto;height:61vh;z-index:998;left:0;top: 0;}.bg9 img {position: absolute; right: 0; top: 0; width: auto; height: 100%;}
+.bg9_honor {width: 10vw;left: 43.6vw; top: 52vh;}
 .animation2 {-webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
 .swiper-slide-active .bg9_honor {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both; }
-.bg9_title {width: 34vw; height:6.7vw; left: 31.7vw; bottom: 23vh;}
+.bg9_title {width: 34vw; height:6.7vw; left: 31.7vw; top: 68vh;}
 
 .swiper-slide-active .bg9_title, .swiper-slide-active .honor_1  {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both; -webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
 @-webkit-keyframes slide-out-left {
@@ -1353,8 +1362,8 @@
     opacity: 0;
   }
 }
-.honor_1 {width: 91.7vw; height: 30.9vw; left: 4.13vw; bottom: 1vh;}
-.honor_2 {width: 91.3vw; height: 43vw; left: 4.13vw; bottom: 2.5vh;opacity: 0;}
+.honor_1 {width: 91.7vw; height: 30.9vw; left: 4.13vw; top: 73vh;}
+.honor_2 {width: 91.3vw; height: 43vw; left: 4.13vw; top: 64.5vh;opacity: 0;}
 .swiper-slide-active .honor_2 {-webkit-animation: slide-in-right 3s ease-out 2.3s ;animation: slide-in-right 3s ease-out 2.3s ;animation-fill-mode: forwards;}
 .bg7_bg { position: absolute; right:37vw; top: 3vh;} .bg7_bg img {position: absolute; left: 0; top: 0;width:23.4vw;}
 .swiper-slide-active .bg7_bg {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
@@ -1668,13 +1677,13 @@
 
     @-webkit-keyframes zuo2{
         0%{right:0}
-        60%{right:-349.2vw;}
-        100%{right: -249.2vw}
+        60%{right:-309.2vw;}
+        100%{right: -209.2vw}
     }
     @-moz-keyframes zuo2{
         0%{right:0}
-        60%{right:-349.2vw;}
-        100%{right: -249.2vw}
+        60%{right:-309.2vw;}
+        100%{right: -209.2vw}
     }
     @-webkit-keyframes zuo3{
         0%{right:0}
@@ -1780,7 +1789,7 @@
                                     <img src="image/menu-zz4.png" class="leftmask1" height="100%" />
                                     <img src="image/menu-ubpa.png" class="menu-title1" />
                                 </li>
-                                <!-- <img src="image/line2.gif" class="line_move1" /> -->
+                                <img src="image/line2.gif" class="line_move1" />
                                 <li class="curright currights">
                                     <img src="image/menu-2.png" class="menu2" height="100%" alt="">
                                     <img src="image/rightmask.png" class="rightmask2" height="100%" />
@@ -1793,7 +1802,7 @@
                                 <img src="image/menu-zz2.png" class="leftmask3" height="100%" />
                                 <img src="image/menu-kjys.png" class="menu-title3"/>
                             </li>
-                            <!-- <img src="image/line1.gif" class="line_move2" /> -->
+                            <img src="image/line1.gif" class="line_move2" />
                             <li class="curright currights">
                                 <img src="image/menu-4.png" height="100%" class="menu4" alt="">
                                 <img src="image/menu-zz1.png" class="rightmask4" height="100%" />
@@ -1806,7 +1815,7 @@
                                 <img src="image/menu-zz4.png" class="leftmask5" height="100%" />
                                 <img src="image/menu-qyjy.png" class="menu-title5" />
                             </li>
-                            <!-- <img src="image/line2.gif" class="line_move3" /> -->
+                            <img src="image/line2.gif" class="line_move3" />
                             <li class="curright">
                                 <img src="image/menu-6.png" class="menu6" height="100%" alt="">
                                 <img src="image/rightmask.png" class="rightmask6" height="100%" />
@@ -1819,7 +1828,7 @@
                                 <img src="image/menu-zz2.png"class="leftmask7" height="100%" />
                                 <img src="image/menu-jtbj.png" class="menu-title7" />
                             </li>
-                            <!-- <img src="image/line1.gif" class="line_move4" /> -->
+                            <img src="image/line1.gif" class="line_move4" />
                             <li class="curright currights">
                                 <img src="image/menu-8.png" class="menu8" height="100%" alt="" />
                                 <img src="image/menu-back.png" class="menu-title8" />
@@ -1894,9 +1903,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="et_bg3 pa">
-                    <img src="image/8-1.png" class="et_image3 pa" />
-                    <img src="image/8-2.png" class="et_text3 pa" />
-                    <img src="image/8-3.png" class="et_text3_2 pa" />
+                    <div class="et_image3_box pa">
+                        <img src="image/8-1.png" class="et_image3 pa" /> 
+                        <img src="image/8-2.png" class="et_text3 pa" />
+                        <img src="image/8-3.png" class="et_text3_2 pa" />
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -1955,7 +1967,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                    <img src="image/11-1.jpg" class="et_bg6 pa" />
+                    <div class="et_bg6 pa"></div>
+                    <!-- <img src="image/11-1.jpg" class="et_bg6 pa" /> -->
                     <div class="et_cont pa">
                         <div class="et_bg7_cover">
                             <img src="image/12-2.png" alt="" />
@@ -2038,11 +2051,13 @@
             </div>
             <div class="swiper-slide">
                 <div class="et_bg13 pa">
-                    <img src="image/18-1.jpg" alt="" />
+                    <!-- <img src="image/18-1.jpg" alt="" /> -->
                 </div>
                 <div class="et_cont pa">
-                    <div class="et_bg13_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt14 pa"><img src="image/18-2.png" alt=""></div>
+                    <div class="et_bg13_cover">
+                        <img src="image/12-2.png" alt="" />
+                        <img src="image/18-2.png" alt="" class="et_txt14 pa" />
+                    </div>
                     <div class="et_text13"><img src="image/18-3.png" alt="" /></div>
                     <div class="et_title13 pa"><img src="image/18-4.png" alt=""></div>
                 </div>
