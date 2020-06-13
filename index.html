@@ -273,16 +273,56 @@
     justify-content: center;
 }
 .navbar .bar-list{
-    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;background: #E1B77E;
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;background: #E1B77E;position: relative;
 }
 
 .navbar .bar-lists {
-    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;background: #E1B77E;
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;background: #E1B77E;position: relative;
 }
 .navbar .bar-list {
     -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-fill-mode: forwards;
+}
+.navbar .bar-list .line_move1 {
+    position: absolute;
+    left:-3vw;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    width: 34vw;
+    z-index: 999;
+}
+.navbar .bar-lists .line_move2 {
+    position: absolute;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    width: 34vw;
+    z-index: 999;
+}
+.navbar .bar-list .line_move3 {
+    position: absolute;
+    left:-3vw;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    width: 34vw;
+    z-index: 999;
+}
+.navbar .bar-lists .line_move4 {
+    position: absolute;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    width: 34vw;
+    z-index: 999;
 }
 .navbar .bar-lists {
     -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -380,7 +420,7 @@
     margin-left: -31vw;
 }
 .navbar ul li.currights {
-    margin-left: -18vw;
+    /* margin-left: -18vw; */
 }
 .navbar ul li.curright img {
     position: absolute;
@@ -888,12 +928,16 @@
     left: 11vw;
     top: 3vw;
 }
-.et_cirlce_img1 img {
+.et_cirlce_img1 .et_cirlce_img1_img {
     left: 12vw;
     top: 1vw;
     width: 29.2vw;
     opacity: 0;
 }
+.et_cirlce_img1 .et_cirlce_img1_title1 {
+    left:6vw;top:13vw;width:17.6vw;
+}
+
 .swiper-slide-active .et_cirlce_img1 img {-webkit-animation:fadeIn 2s 1.5s ease both;-moz-animation:fadeIn 2s 1.5s ease both; animation-fill-mode: forwards;}
 .swiper-slide-active .et_cirlce_img2 img {-webkit-animation:fadeIn 2s 2s ease both;-moz-animation:fadeIn 2s 2s ease both; animation-fill-mode: forwards;}
 .swiper-slide-active .et_cirlce_img3 img {-webkit-animation:fadeIn 2s 2.5s ease both;-moz-animation:fadeIn 2s 2.5s ease both; animation-fill-mode: forwards;}
@@ -901,6 +945,15 @@
 .swiper-slide-active .et_cirlce_img5 img {-webkit-animation:fadeIn 2s 3.5s ease both;-moz-animation:fadeIn 2s 3.5s ease both; animation-fill-mode: forwards;}
 .swiper-slide-active .et_cirlce_img6 img {-webkit-animation:fadeIn 2s 4s ease both;-moz-animation:fadeIn 1s 4s ease both; animation-fill-mode: forwards;}
 .swiper-slide-active .et_cirlce_img7 img {-webkit-animation:fadeIn 2s 4.5s ease both;-moz-animation:fadeIn 2s 4.5s ease both; animation-fill-mode: forwards;}
+
+.swiper-slide-active .et_cirlce_img1 .et_cirlce_img1_title1 {-webkit-animation:fadeIn 2s 2s ease both;-moz-animation:fadeIn 2s 2s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img2 .et_cirlce_img1_title2 {-webkit-animation:fadeIn 2s 2.5s ease both;-moz-animation:fadeIn 2s 2.5s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img3 .et_cirlce_img1_title3 {-webkit-animation:fadeIn 2s 3s ease both;-moz-animation:fadeIn 2s 3s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img4 .et_cirlce_img1_title4 {-webkit-animation:fadeIn 2s 3.5s ease both;-moz-animation:fadeIn 2s 3.5s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img5 .et_cirlce_img1_title5 {-webkit-animation:fadeIn 2s 4s ease both;-moz-animation:fadeIn 2s 4s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img6 .et_cirlce_img1_title6 {-webkit-animation:fadeIn 2s 4.5s ease both;-moz-animation:fadeIn 1s 4.5s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img7 .et_cirlce_img1_title7 {-webkit-animation:fadeIn 2s 5s ease both;-moz-animation:fadeIn 2s 5s ease both; animation-fill-mode: forwards;}
+
 .et_cirlce_img2 {
     width: 31.3vw;
     left: 20vw;
@@ -911,6 +964,9 @@
     top: 4vw;
     width: 31.3vw;
     opacity: 0;
+}
+.et_cirlce_img2 .et_cirlce_img1_title2 {
+    left:20vw;top:20vw;width:17.6vw;
 }
 .et_cirlce_img3 {
     width: 34.4vw;
@@ -924,6 +980,9 @@
     top: 4vw;
     opacity: 0;
 }
+.et_cirlce_img3 .et_cirlce_img1_title3 {
+    left:22vw;top:21vw;width:17.6vw;
+}
 .et_cirlce_img4 {
     width: 27.8vw;
     left: 43vw;
@@ -931,32 +990,43 @@
     
 }
 .et_cirlce_img4 img {
-    width: 27.8vw;
+    width: 26.8vw;
     left: 17vw;
     top: 1vw;
     opacity: 0;
 }
+.et_cirlce_img4 .et_cirlce_img1_title4 {
+    left:24vw;top:14vw;width:17.6vw;
+}
+
 .et_cirlce_img5 {
     width: 33.4vw;
     left: 30.5vw;
     top: 66vw;
 }
 .et_cirlce_img5 img {
-    width: 33.4vw;
+    width: 32.4vw;
     left: 21vw;
     top: 1vw;
     opacity: 0;
 }
+.et_cirlce_img5 .et_cirlce_img1_title5 {
+    left:28vw;top:12vw;width:17.6vw;
+}
+
 .et_cirlce_img6 {
-    width: 31.2vw;
+    width: 30vw;
     left: 13vw;
     top: 76vw;
 }
 .et_cirlce_img6 img {
-    width: 31.2vw;
+    width: 30vw;
     left: 24vw;
     top: 4vw;
     opacity: 0;
+}
+.et_cirlce_img6 .et_cirlce_img1_title6 {
+    left:29vw;top:18vw;width:17.6vw;
 }
 .et_cirlce_img7 {
     width: 28.2vw;
@@ -964,11 +1034,15 @@
     top: 73vw;
 }
 .et_cirlce_img7 img{
-    width: 28.2vw;
-    left: 25vw;
-    top: 12vw;
+    width: 27.2vw;
+    left: 26vw;
+    top: 12.4vw;
     opacity: 0;
 }
+.et_cirlce_img7 .et_cirlce_img1_title7 {
+    left:31vw;top:26vw;width:17.6vw;
+}
+
 .et_circle_line {
     position: absolute;
     width: 116vw;
@@ -1080,9 +1154,9 @@
 .autobox {width: 100%;}
 .et_bg7 {width: auto;height: 72vh;z-index:998;left:0;top: 0;}
 .et_bg7 img {
-    /* position: absolute;
+    position: absolute;
     right: 0;
-    top: 0; */
+    top: 0;
     width: auto;
     height: 100%;
 }
@@ -1285,13 +1359,13 @@
 .bg7_bg { position: absolute; right:37vw; top: 3vh;} .bg7_bg img {position: absolute; left: 0; top: 0;width:23.4vw;}
 .swiper-slide-active .bg7_bg {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
 
-.bg7_cover {width: 65vw;height: 106vw; left:0;top:0;right:0;bottom:0;margin: auto;}.bg7_cover img {position: absolute; left:0; top: 0; width: 100%; height: 100%;}
-.bg7_title {position: absolute;left: 0; top:24vh; right:0; margin: auto;}.bg7_title img {position: absolute; left:0; top: 0; right:0; margin: auto;width: 33vw;}
-.swiper-slide-active .bg7_title {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
-.swiper-slide-active .bg7_desc {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
+.bg7_cover {width: 65vw;height: 106vw; left:0;top:0;right:0;bottom:0;margin: auto;}.bg7_cover img {position: absolute; left:0; top: 0; width: 100%;}
+.bg7_cover .bg7_title {position: absolute; left:0; top: 12vw; right:0; margin: auto;width: 33vw;}
+.swiper-slide-active .bg7_cover .bg7_title {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
+.swiper-slide-active .bg7_cover .bg7_desc {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
 .swiper-slide-active .bg8_desc {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
-.bg7_desc {left: 0; top: 30vh; right:0; margin: auto;}.bg7_desc img {position: absolute; left:0; top: 0;right:0; margin: auto; width: 38.9vw;}
-.bg8_desc {left: 0; top: 30vh; right:0; margin: auto;}.bg8_desc img {position: absolute; left:0; top: 0;right:0; margin: auto; width: 39.3vw;}
+.bg7_cover .bg7_desc {position: absolute; left:0; top: 23vw;right:0; margin: auto; width: 38.9vw;}
+.bg7_cover .bg8_desc {position: absolute; left:0; top: 23vw;right:0; margin: auto; width: 39.3vw;}
 .ba6_1 {width:3.5rem;height:1.78rem; background-image: url(image/ba6_1.png); background-size:cover; background-repeat: no-repeat;left:0.55rem;top:1.55rem}
 .swiper-slide-active .ba6_1 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 .ba6_2 {width:4.84rem;height:6.57rem; background-image: url(image/ba6_2.png); background-size:cover; background-repeat: no-repeat;left:0;top:4.12rem}
@@ -1705,19 +1779,12 @@
                                     <img src="image/menu-1.png" class="menu1" height="100%" />
                                     <img src="image/menu-zz4.png" class="leftmask1" height="100%" />
                                     <img src="image/menu-ubpa.png" class="menu-title1" />
-                                    <!-- <p>
-                                        <span><i class="mtxt1"></i>
-                                        世博蓝图</span>
-                                    </p> -->
                                 </li>
+                                <!-- <img src="image/line2.gif" class="line_move1" /> -->
                                 <li class="curright currights">
                                     <img src="image/menu-2.png" class="menu2" height="100%" alt="">
                                     <img src="image/rightmask.png" class="rightmask2" height="100%" />
                                     <img src="image/menu-jt.png" class="menu-title2"/>
-                                    <!-- <p>
-                                        <span><i class="mtxt2"></i>
-                                        便捷交通</span>
-                                    </p> -->
                                 </li>
                         </div>
                         <div class="bar-lists">
@@ -1725,19 +1792,12 @@
                                 <img src="image/menu-3.png" class="menu3" height="100%" alt="">
                                 <img src="image/menu-zz2.png" class="leftmask3" height="100%" />
                                 <img src="image/menu-kjys.png" class="menu-title3"/>
-                                <!-- <p>
-                                    <span><i class="mtxt3"></i>
-                                    8大优势</span>
-                                </p> -->
                             </li>
+                            <!-- <img src="image/line1.gif" class="line_move2" /> -->
                             <li class="curright currights">
                                 <img src="image/menu-4.png" height="100%" class="menu4" alt="">
                                 <img src="image/menu-zz1.png" class="rightmask4" height="100%" />
                                 <img src="image/menu-xmgl.png" class="menu-title4"/>
-                                <!-- <p>
-                                    <span><i class="mtxt4"></i>
-                                    项目概览</span>
-                                </p> -->
                             </li>
                         </div>
                         <div class="bar-list">
@@ -1745,19 +1805,12 @@
                                 <img src="image/menu-5.png" class="menu5" height="100%" alt="">
                                 <img src="image/menu-zz4.png" class="leftmask5" height="100%" />
                                 <img src="image/menu-qyjy.png" class="menu-title5" />
-                                <!-- <p>
-                                    <span><i class="mtxt5"></i>
-                                    项目荣誉</span>
-                                </p> -->
                             </li>
+                            <!-- <img src="image/line2.gif" class="line_move3" /> -->
                             <li class="curright">
                                 <img src="image/menu-6.png" class="menu6" height="100%" alt="">
                                 <img src="image/rightmask.png" class="rightmask6" height="100%" />
                                 <img src="image/menu-xmry.png" class="menu-title6" />
-                                <!-- <p>
-                                    <span><i class="mtxt6"></i>
-                                    集团介绍</span>
-                                </p> -->
                             </li>
                         </div>
                         <div class="bar-lists">
@@ -1765,11 +1818,8 @@
                                 <img src="image/menu-7.png" class="menu7" height="100%" alt="">
                                 <img src="image/menu-zz2.png"class="leftmask7" height="100%" />
                                 <img src="image/menu-jtbj.png" class="menu-title7" />
-                                <!-- <p>
-                                    <span><i class="mtxt7"></i>
-                                    在线洽谈</span>
-                                </p> -->
                             </li>
+                            <!-- <img src="image/line1.gif" class="line_move4" /> -->
                             <li class="curright currights">
                                 <img src="image/menu-8.png" class="menu8" height="100%" alt="" />
                                 <img src="image/menu-back.png" class="menu-title8" />
@@ -1867,29 +1917,36 @@
                         <div class="et_circle_outside pa">
                             <!-- <img src="image/10-3.png" class="et_circle_outside_img" /> -->
                             <div class="et_cirlce_img1 pa">
-                                    <img src="image/advance1.png" />
+                                    <img src="image/advance1.png" class="et_cirlce_img1_img" />
+                                    <img src="image/大堂.png" class="et_cirlce_img1_title1 pa" />
                             </div>
                             <div class="et_cirlce_img2 pa">
                                     <img src="image/advance2.png" class="pa" />
+                                    <img src="image/电梯间.png" class="et_cirlce_img1_title2 pa" />
                             </div>
                             <div class="et_cirlce_img3 pa">
                                     <img src="image/advance3.png" class="pa" />
+                                    <img src="image/卫生间.png" class="et_cirlce_img1_title3 pa" />
                             </div>
                             <div class="et_cirlce_img4 pa">
                                     <img src="image/advance4.png" class="pa" />
+                                    <img src="image/样板间.png" class="et_cirlce_img1_title4 pa" />
                             </div>
                             <div class="et_cirlce_img5 pa">
                                     <img src="image/advance5.png" class="pa" />
+                                    <img src="image/餐娱配套.png" class="et_cirlce_img1_title5 pa" />
                             </div>
                             <div class="et_cirlce_img6 pa">
                                     <img src="image/advance6.png" class="pa" />
+                                    <img src="image/景观配套.png" class="et_cirlce_img1_title6 pa" />
                             </div>
                             <div class="et_cirlce_img7 pa">
                                     <img src="image/advance7.png" class="pa" />
+                                    <img src="image/古北物业.png" class="et_cirlce_img1_title7 pa" />
                             </div>
                             
                         </div>
-                        <img src="image/10-7.png" class="et_circle_img pa" />
+                        <!-- <img src="image/10-7.png" class="et_circle_img pa" /> -->
                         <img src="image/10-5.png" class="et_circle_line pa" />
                         <img src="image/10-2.png" class="et_circle_width pa" />
                         <img src="image/10-1.png" class="et_center_circle pa" />
@@ -1909,12 +1966,9 @@
                     </div>
                 </div>
             <div class="swiper-slide">
-                <div class="autobox">
-                    <div class="et_bg7 pa">
-                        <img src="image/12-1.jpg"  alt=""/>
-                    </div>
+                <div class="et_bg7 pa scstyle2 ">
+                    <img src="image/12-1.jpg"  alt=""/>
                 </div>
-                
                 <div class="et_cont pa">
                     <div class="et_bg7_cover">
                         <img src="image/12-2.png" alt="" />
@@ -1999,9 +2053,12 @@
                 </div>
                 <div class="et_cont pa">
                     <div class="bg7_bg"><img src="image/19-1.png" alt="" /></div>
-                    <div class="bg7_cover pa"><img src="image/19-2.png" alt=""></div>
-                    <div class="bg7_title"><img src="image/19-4.png" alt="" /></div>
-                    <div class="bg7_desc pa"><img src="image/19-5.png" alt=""></div>
+                    <div class="bg7_cover pa">
+                        <img src="image/19-2.png" alt="">
+                        <img src="image/19-4.png" alt="" class="bg7_title"/>
+                        <img src="image/19-5.png" alt="" class="bg7_desc pa">
+                    </div>
+                    
                 </div>
             </div>
             <div class="swiper-slide">
@@ -2010,9 +2067,11 @@
                 </div>
                 <div class="et_cont pa">
                     <div class="bg7_bg"><img src="image/19-1.png" alt="" /></div>
-                    <div class="bg7_cover pa"><img src="image/19-2.png" alt=""></div>
-                    <div class="bg7_title"><img src="image/20-2.png" alt="" /></div>
-                    <div class="bg8_desc pa"><img src="image/20-3.png" alt=""></div>
+                    <div class="bg7_cover pa">
+                        <img src="image/19-2.png" alt="" >
+                        <img src="image/20-2.png" alt="" class="bg7_title"/>
+                        <img src="image/20-3.png" alt="" class="bg8_desc pa">
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -2108,7 +2167,7 @@ document.addEventListener("visibilitychange", function() {
 document.addEventListener("WeixinJSBridgeReady", function () {
 WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
     var sound = new Howl({
-        src: ['bgm.mp3']
+        src: ["bgm.wav"]
     });
     sound.once('load', function(){
         sound.play();
@@ -2380,6 +2439,14 @@ $(".etbtn7").on("click",function(){
 })
 $(".etbtn8").on("click",function(){
     swiper.slideTo(10,false);
+})
+
+$(".line_move1").on("click", function() {
+    console.log('234')
+    $(".navbar").fadeOut();
+    swiper.slideTo(4,false);
+    // $(".line_move1").css('z-index','0')
+
 })
 /////放大缩小
 $(".table").click(function(){
