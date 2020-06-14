@@ -9,7 +9,7 @@
 <meta name="Keywords" content="" />
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/swiper.min.css">
-<title>滨江大厦</title>
+<title>世博滨江大厦•北座</title>
 <script type="text/javascript">
 //Rem
 (function (win, doc) {
@@ -451,17 +451,24 @@
     width: 51.4vw;
 }
 .navbar ul li.curright .rightmask2 {
-    width: 58.4vw;
+    width: 60.4vw;
+    height: 104%;
+    position: absolute;
+    right: -1vw;
+    top: -1vw;
 }
 .navbar ul li.curright .rightmask4 {
-    width: 52.5vw;
+    width: 53.5vw;
     height: 105%;
     position: absolute;
     top: -1vw;
-    right: -1vw;
+    right: -1.2vw;
 }
 .navbar ul li.curright .rightmask6 {
-    width: 58.4vw;
+    width: 59.4vw;
+    height: 103%;
+    position: absolute;
+    right: -1vw;
 }
 
 .navbar ul li.cur  .menu-title1 {
@@ -900,13 +907,33 @@
     width: 116vw;
     height: 116vw;
 }
-.et_bg5_circle .outimg {
+.outside {
+    left: 0;
+    top: 0;
+    width: 116vw;
+    height: 116vw;
+}
+
+.et_bg5_circle .outside .outimg {
     left: 0;
     top: 0;
     width: 116vw;
     opacity: 0;
 }
-.swiper-slide-active .outimg{
+
+.et_bg5_circle .outside .outsanjiao {
+    right: 14.9vw;
+    top: 20vw;
+    width: 1.7vw;
+    -moz-transform:rotate(80deg);
+    -webkit-transform:rotate(80deg);
+    -o-transform:rotate(80deg);
+    -ms-transform:rotate(80deg);
+    transform:rotate(80deg);
+    opacity: 0;
+}
+
+.swiper-slide-active .outside .outimg{
     -webkit-animation:fadeIn 3s 1.5s ease both;-moz-animation:fadeIn 3s 1.5s ease both;
 }
 .et_circle_outside {
@@ -948,13 +975,13 @@
     left:6vw;top:13vw;width:17.6vw;opacity: 0;
 }
 
-.swiper-slide-active .et_cirlce_img1 img {-webkit-animation:fadeIn 2s 1.5s ease both;-moz-animation:fadeIn 2s 1.5s ease both; animation-fill-mode: forwards;}
-.swiper-slide-active .et_cirlce_img2 img {-webkit-animation:fadeIn 2s 2s ease both;-moz-animation:fadeIn 2s 2s ease both; animation-fill-mode: forwards;}
-.swiper-slide-active .et_cirlce_img3 img {-webkit-animation:fadeIn 2s 2.5s ease both;-moz-animation:fadeIn 2s 2.5s ease both; animation-fill-mode: forwards;}
-.swiper-slide-active .et_cirlce_img4 img {-webkit-animation:fadeIn 2s 3s ease both;-moz-animation:fadeIn 2s 3s ease both; animation-fill-mode: forwards;}
-.swiper-slide-active .et_cirlce_img5 img {-webkit-animation:fadeIn 2s 3.5s ease both;-moz-animation:fadeIn 2s 3.5s ease both; animation-fill-mode: forwards;}
-.swiper-slide-active .et_cirlce_img6 img {-webkit-animation:fadeIn 2s 4s ease both;-moz-animation:fadeIn 1s 4s ease both; animation-fill-mode: forwards;}
-.swiper-slide-active .et_cirlce_img7 img {-webkit-animation:fadeIn 2s 4.5s ease both;-moz-animation:fadeIn 2s 4.5s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img1 img {-webkit-animation:fadeIn 2s 2s ease both;-moz-animation:fadeIn 2s 2s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img2 img {-webkit-animation:fadeIn 2s 2.5s ease both;-moz-animation:fadeIn 2s 2.5s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img3 img {-webkit-animation:fadeIn 2s 3s ease both;-moz-animation:fadeIn 2s 3s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img4 img {-webkit-animation:fadeIn 2s 3.5s ease both;-moz-animation:fadeIn 2s 3.5s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img5 img {-webkit-animation:fadeIn 2s 4s ease both;-moz-animation:fadeIn 2s 4s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img6 img {-webkit-animation:fadeIn 2s 4.5s ease both;-moz-animation:fadeIn 2s 4.5s ease both; animation-fill-mode: forwards;}
+.swiper-slide-active .et_cirlce_img7 img {-webkit-animation:fadeIn 2s 5s ease both;-moz-animation:fadeIn 2s 5s ease both; animation-fill-mode: forwards;}
 
 .swiper-slide-active .et_cirlce_img1 .et_cirlce_img1_title1 {-webkit-animation:fadeIn 2s 2s ease both;-moz-animation:fadeIn 2s 2s ease both; animation-fill-mode: forwards;}
 .swiper-slide-active .et_cirlce_img2 .et_cirlce_img1_title2 {-webkit-animation:fadeIn 2s 2.5s ease both;-moz-animation:fadeIn 2s 2.5s ease both; animation-fill-mode: forwards;}
@@ -1066,7 +1093,7 @@
     animation-fill-mode: forwards;
 }
 .et_circle_width {
-    width: 34.4vw;
+    width: 45.4vw;
     position: absolute;
     left: 0;
     top: 0;
@@ -1335,9 +1362,55 @@
 .bg9_honor {width: 10vw;left: 43.6vw; top: 52vh;}
 .animation2 {-webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
 .swiper-slide-active .bg9_honor {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both; }
-.bg9_title {width: 34vw; height:6.7vw; left: 31.7vw; top: 68vh;}
-
-.swiper-slide-active .bg9_title, .swiper-slide-active .honor_1  {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both; -webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
+.honor_box1 .honor_left1 {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.honor_box1 .honor_left1 .bg9_title1 {width: 34vw; height:6.7vw; left: 31.7vw; top: 0.5vh;}
+.honor_box1 {width: 100%; height: 30vh; position: absolute; left: 0;bottom: 0;height: 32vh;display: flex; flex-direction: row;flex-wrap:nowrap;overflow-x: scroll;}
+.honor_box2 {width: 100%; height: 30vh; position: absolute; left:0;bottom: 0;;display: flex; flex-direction: row;flex-wrap:nowrap;overflow-x: scroll;}
+.honor_box2::-webkit-scrollbar {
+            display: none;
+            width: 0 !important;
+        }
+.honor_box2 .honor_left2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.honor_box2 .honor_left2 .bg9_title1 {
+    width: 34vw; height:6.7vw; 
+    /* left: 31.7vw; top: 0.5vh;position: absolute; */
+}
+.honor_box2 .honor_left2 .honor_1_1 {
+    width: 94.7vw;
+    height: 33.9vw;
+    margin-left: 5vw;
+    margin-top: 7vw;
+     /* left: 4.13vw; top: 5vh; position: absolute; */
+}
+.honor_box2 .honor_2_1 {
+    width: 91.3vw;
+    height: 43vw;
+    margin-left: 10vw;
+     /* left: 4.13vw; top: 0.5vh; position: absolute; */
+     opacity: 0;
+}
+.honor_box2 .honor_2_2 {
+    width: 91.3vw;
+    height: 43vw;
+    margin-left: 10vw;
+     /* left: 4.13vw; top: 0.5vh; position: absolute; */
+     opacity: 0;
+     /* position: absolute; */
+}
+.swiper-slide-active .honor_box2 .honor_left1  {-webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
 @-webkit-keyframes slide-out-left {
   0% {
     -webkit-transform: translateX(0);
@@ -1345,8 +1418,8 @@
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
     opacity: 0;
   }
 }
@@ -1357,14 +1430,38 @@
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
     opacity: 0;
   }
 }
-.honor_1 {width: 91.7vw; height: 30.9vw; left: 4.13vw; top: 73vh;}
-.honor_2 {width: 91.3vw; height: 43vw; left: 4.13vw; top: 64.5vh;opacity: 0;}
-.swiper-slide-active .honor_2 {-webkit-animation: slide-in-right 3s ease-out 2.3s ;animation: slide-in-right 3s ease-out 2.3s ;animation-fill-mode: forwards;}
+.honor_box1 .honor_left1 .honor_1_1 {width: 91.7vw; height: 30.9vw; left: 4.13vw; top: 5vh;}
+.honor_box1 .honor_2_1 {width: 91.3vw; height: 43vw; left: 4.13vw; top: 0.5vh;opacity: 0;}
+.swiper-slide-active .honor_2_2 {-webkit-animation: slide-in-right1 3s ease-out 2.3s ;animation: slide-in-right1 3s ease-out 2.3s ;animation-fill-mode: forwards;}
+@-webkit-keyframes slide-in-right1 {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right1 {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
+}
 .bg7_bg { position: absolute; right:37vw; top: 3vh;} .bg7_bg img {position: absolute; left: 0; top: 0;width:23.4vw;}
 .swiper-slide-active .bg7_bg {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both;}
 
@@ -1792,7 +1889,7 @@
                                 <img src="image/line2.gif" class="line_move1" />
                                 <li class="curright currights">
                                     <img src="image/menu-2.png" class="menu2" height="100%" alt="">
-                                    <img src="image/rightmask.png" class="rightmask2" height="100%" />
+                                    <img src="image/rightmask.png" class="rightmask2" />
                                     <img src="image/menu-jt.png" class="menu-title2"/>
                                 </li>
                         </div>
@@ -1818,7 +1915,7 @@
                             <img src="image/line2.gif" class="line_move3" />
                             <li class="curright">
                                 <img src="image/menu-6.png" class="menu6" height="100%" alt="">
-                                <img src="image/rightmask.png" class="rightmask6" height="100%" />
+                                <img src="image/rightmask.png" class="rightmask6" />
                                 <img src="image/menu-xmry.png" class="menu-title6" />
                             </li>
                         </div>
@@ -1925,7 +2022,11 @@
                 <div class="et_bg5 pa">
                     <img src="image/10-6.png" alt="" class="et_bg5_title" />
                     <div class="et_bg5_circle pa">
-                        <img src="image/10-8.png" class="outimg pa" />
+                        <div class="outside pa">
+                            <img src="image/10-8.png" class="outimg pa" />
+                            <img src="image/pic.png" class="outsanjiao pa" />
+                        </div>
+                        
 
                         <div class="et_circle_outside pa">
                             <!-- <img src="image/10-3.png" class="et_circle_outside_img" /> -->
@@ -2096,9 +2197,13 @@
                 </div>
                 <div class="et_cont pa">
                     <img src="image/21-2.png" class="bg9_honor pa" />
-                    <img src="image/21-5.png" class="bg9_title pa"/>
-                    <img src="image/21-3.png" class="honor_1 pa"/>
-                    <img src="image/21-4.png" class="honor_2 pa"/>
+                    <div class="honor_box honor_box2">
+                        <div class="honor_left honor_left2 honor_left1">
+                            <img src="image/21-5.png" class="bg9_title1"/>
+                            <img src="image/21-3.png" class="honor_1_1"/>
+                        </div>
+                        <img src="image/21-4.png" class="honor_2_1 honor_2_2"/>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -2107,7 +2212,7 @@
                 </div>
                 <div class="et_cont10 pa">
                     <img src="image/19-2.png" class="bg10_cover pa" />
-                    <a href="http://api.map.baidu.com/marker?location=31.208553,121.499422&title=我的位置&content=世博滨江大厦•北座&output=html" class="search pa">
+                    <a href="https://uri.amap.com/marker?position=121.493070,31.202804&name=世博滨江大厦·北座" class="search pa">
                         <img src="image/4-1.png" class="bg10_map pa" />
                         <img src="image/position.png" class="bg10_logo pa" />
                     </a>
@@ -2163,6 +2268,16 @@ $(".btnplay").click(function () {
         $(".btnplay").removeClass("btnCur");
     }
 })
+
+window.onload = function() {
+    let height = $(window).height();
+    console.log(height, 'height')
+    if(height === 568 || height < 568) {
+        $(".et_cirlce_img1").css('top','-1.5vw')
+    } else {
+        $(".et_cirlce_img1").css('top','3vw')
+    }
+}
         
 /////
 document.addEventListener("visibilitychange", function() {
@@ -2184,13 +2299,12 @@ document.addEventListener("visibilitychange", function() {
 document.addEventListener("WeixinJSBridgeReady", function () {
 WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
     var sound = new Howl({
-        src: ["bgm.wav"]
+        src: ["bgm.mp3"],
+        autoplay: true
     });
     sound.once('load', function(){
         sound.play();
     });
-
-
 });
 }, false);
 
@@ -2271,6 +2385,8 @@ function loadIMG() {
 }
 
 
+    
+
 var swiper;
 function loadComplete(){
     console.log("加载完成");
@@ -2290,14 +2406,50 @@ function loadComplete(){
                         $(".line_img").fadeIn()
                         $(".line_img").css('z-index',0)
                     }      
+                    if (this.activeIndex === 8) {
+                        let height = $(window).height();
+                        if(height === 568 || height < 568 ) {
+                            $(".et_cirlce_img1").css('top','-1.5vw')
+                        } else if (height === 583 || height < 583 || height === 640){
+                            $(".et_cirlce_img1").css('top','2vw')
+                        } else if(height === 640) {
+                            $(".et_cirlce_img1").css('top','3vw')
+                        }
+
+                    }
                     if ( this.activeIndex === 21) {
                         $(".nextbar").fadeOut();
                     }
-                    else {
-                        $(".nextbar").fadeIn();
+
+                    if (this.activeIndex === 19) {
+                        // $(".honor_box").on('touchstart', function () {
+                        //         $(".honor_box").removeClass('honor_box1');
+                        //         $('.honor_left').removeClass('honor_left1');
+                        //         $('.bg9_title').removeClass('bg9_title1').removeClass('pa');
+                        //         $(".honor_1").removeClass('honor_1_1').removeClass('pa');
+                        //         $(".honor_2").removeClass('honor_2_1').removeClass('pa');
+                        //         $(".honor_box").addClass('honor_box2');
+                        //         $('.honor_left').addClass('honor_left2');
+                        //         $('.bg9_title').addClass('bg9_title2')
+                        //         $(".honor_1").addClass('honor_1_2')
+                        //         $(".honor_2").addClass('honor_2_2')
+                        // })
+                    } else {
+                        // $(".honor_box").removeClass('honor_box2');
+                        // $('.honor_left').removeClass('honor_left2');
+                        // $('.bg9_title').removeClass('bg9_title2')
+                        // $(".honor_1").removeClass('honor_1_2')
+                        // $(".honor_2").removeClass('honor_2_2')
+
+                        // $(".honor_box").addClass('honor_box1');
+                        // $('.honor_left').addClass('honor_left1');
+                        // $('.bg9_title').addClass('bg9_title1').addClass('pa');
+                        // $(".honor_1").addClass('honor_1_1').addClass('pa');
+                        // $(".honor_2").addClass('honor_2_1').addClass('pa');
                     }
-                    console.log(swiper.activeIndex);
-                    
+                    // else {
+                    //     $(".nextbar").fadeIn();
+                    // }
                 },
             }
         });
@@ -2308,6 +2460,18 @@ function loadComplete(){
 $(".navbtn").click(function () {
     $(".navbar").fadeIn();
     $(".nextbar").fadeOut();
+    
+    // $(".honor_box").removeClass('honor_box2');
+    // $('.honor_left').removeClass('honor_left2');
+    // $('.bg9_title').removeClass('bg9_title2')
+    // $(".honor_1").removeClass('honor_1_2')
+    // $(".honor_2").removeClass('honor_2_2')
+
+    // $(".honor_box").addClass('honor_box1');
+    // $('.honor_left').addClass('honor_left1');
+    // $('.bg9_title').addClass('bg9_title1').addClass('pa');
+    // $(".honor_1").addClass('honor_1_1').addClass('pa');
+    // $(".honor_2").addClass('honor_2_1').addClass('pa');
 })
 
 $(".et_bg1").click(function () {
@@ -2395,6 +2559,13 @@ $(".navbar li").eq(4).on("click",function(){
 $(".navbar li").eq(5).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(19,false);
+    var element = document.getElementsByClassName('honor_2_1')[0]
+        element.addEventListener('animationend', function() {
+            setTimeout(() => {
+                $(".honor_left").removeClass('honor_left1')
+                $(".honor_2_1").css('margin-left','110vw')
+            },300)
+        })
 })
 $(".navbar li").eq(6).on("click",function(){
     $(".navbar").fadeOut();
@@ -2412,25 +2583,109 @@ $(".qietan").on("click",function(){
     // $(".navbar ul li").eq(7).addClass("cur");
 })
 $(".et_cirlce_img1 img").on("click", function() {
-    swiper.slideTo(9, false)
+    // swiper.slideTo(9, false)
+    $(".outsanjiao").css('opacity', '1');
+    $(".outsanjiao").css('left', '48vw');
+    $(".outsanjiao").css('top', '1vw');
+    $(".outsanjiao").css('transform', 'rotate(25deg)');
+    $(".outsanjiao").css('-webkit-transform', 'rotate(25deg)');
+    $(".outsanjiao").css('-moz-transform', 'rotate(25deg)');
+    $(".outsanjiao").css('-ms-transform', 'rotate(25deg)');
+    $(".outsanjiao").css('-o-transform', 'rotate(25deg)');
+    setTimeout(() => {
+        swiper.slideTo(9, false)
+        $(".outsanjiao").css('opacity', '0');
+    }, 500)
 })
 $(".et_cirlce_img2 img").on("click", function() {
-    swiper.slideTo(11, false)
+    $(".outsanjiao").css('opacity', '1');
+    $(".outsanjiao").css('left', '79vw');
+    $(".outsanjiao").css('top', '5vw');
+    $(".outsanjiao").css('transform', 'rotate(55deg)');
+    $(".outsanjiao").css('-webkit-transform', 'rotate(55deg)');
+    $(".outsanjiao").css('-moz-transform', 'rotate(55deg)');
+    $(".outsanjiao").css('-ms-transform', 'rotate(55deg)');
+    $(".outsanjiao").css('-o-transform', 'rotate(55deg)');
+    setTimeout(() => {
+        swiper.slideTo(11, false)
+        $(".outsanjiao").css('opacity', '0');
+    }, 500)
+    // swiper.slideTo(11, false)
 })
 $(".et_cirlce_img3 img").on("click", function() {
-    swiper.slideTo(12, false)
+    $(".outsanjiao").css('opacity', '1');
+    $(".outsanjiao").css('left', '104vw');
+    $(".outsanjiao").css('top', '26vw');
+    $(".outsanjiao").css('transform', 'rotate(85deg)');
+    $(".outsanjiao").css('-webkit-transform', 'rotate(85deg)');
+    $(".outsanjiao").css('-moz-transform', 'rotate(85deg)');
+    $(".outsanjiao").css('-ms-transform', 'rotate(85deg)');
+    $(".outsanjiao").css('-o-transform', 'rotate(85deg)');
+    setTimeout(() => {
+        swiper.slideTo(12, false)
+        $(".outsanjiao").css('opacity', '0');
+    }, 500)
+    // swiper.slideTo(12, false)
 })
 $(".et_cirlce_img4 img").on("click", function() {
-    swiper.slideTo(10, false)
+    $(".outsanjiao").css('opacity', '1');
+    $(".outsanjiao").css('left', '113vw');
+    $(".outsanjiao").css('top', '55vw');
+    $(".outsanjiao").css('transform', 'rotate(125deg)');
+    $(".outsanjiao").css('-webkit-transform', 'rotate(125deg)');
+    $(".outsanjiao").css('-moz-transform', 'rotate(125deg)');
+    $(".outsanjiao").css('-ms-transform', 'rotate(125deg)');
+    $(".outsanjiao").css('-o-transform', 'rotate(125deg)');
+    setTimeout(() => {
+        swiper.slideTo(13, false)
+        $(".outsanjiao").css('opacity', '0');
+    }, 500)
+    // swiper.slideTo(10, false)
 })
 $(".et_cirlce_img5 img").on("click", function() {
-    swiper.slideTo(15, false)
+    $(".outsanjiao").css('opacity', '1');
+    $(".outsanjiao").css('left', '104.5vw');
+    $(".outsanjiao").css('top', '87vw');
+    $(".outsanjiao").css('transform', 'rotate(155deg)');
+    $(".outsanjiao").css('-webkit-transform', 'rotate(155deg)');
+    $(".outsanjiao").css('-moz-transform', 'rotate(155deg)');
+    $(".outsanjiao").css('-ms-transform', 'rotate(155deg)');
+    $(".outsanjiao").css('-o-transform', 'rotate(155deg)');
+    setTimeout(() => {
+        swiper.slideTo(15, false)
+        $(".outsanjiao").css('opacity', '0');
+    }, 500)
+    // swiper.slideTo(15, false)
 })
 $(".et_cirlce_img6 img").on("click", function() {
-    swiper.slideTo(13, false)
+    $(".outsanjiao").css('opacity', '1');
+    $(".outsanjiao").css('left', '81vw');
+    $(".outsanjiao").css('top', '108vw');
+    $(".outsanjiao").css('transform', 'rotate(185deg)');
+    $(".outsanjiao").css('-webkit-transform', 'rotate(185deg)');
+    $(".outsanjiao").css('-moz-transform', 'rotate(185deg)');
+    $(".outsanjiao").css('-ms-transform', 'rotate(185deg)');
+    $(".outsanjiao").css('-o-transform', 'rotate(185deg)');
+    setTimeout(() => {
+        swiper.slideTo(13, false)
+        $(".outsanjiao").css('opacity', '0');
+    }, 500)
+    // swiper.slideTo(13, false)
 })
 $(".et_cirlce_img7 img").on("click", function() {
-    swiper.slideTo(16, false)
+    $(".outsanjiao").css('opacity', '1');
+    $(".outsanjiao").css('left', '51vw');
+    $(".outsanjiao").css('top', '113.2vw');
+    $(".outsanjiao").css('transform', 'rotate(215deg)');
+    $(".outsanjiao").css('-webkit-transform', 'rotate(215deg)');
+    $(".outsanjiao").css('-moz-transform', 'rotate(215deg)');
+    $(".outsanjiao").css('-ms-transform', 'rotate(215deg)');
+    $(".outsanjiao").css('-o-transform', 'rotate(215deg)');
+    setTimeout(() => {
+        swiper.slideTo(16, false)
+        $(".outsanjiao").css('opacity', '0');
+    }, 500)
+    // swiper.slideTo(16, false)
 })
 ///8大
 $(".etbtn1").on("click",function(){
