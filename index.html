@@ -282,11 +282,13 @@
     width: 100vw;
 }
 .navbar .bar-list{
-    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;position: relative;box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 1);
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;position: relative;
+    /* box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 1); */
 }
 
 .navbar .bar-lists {
-    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;position: relative;box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 1);
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;position: relative;
+    /* box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 1); */
 }
 .navbar .bar-list {
     /* -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -838,7 +840,7 @@
 .et-top {width: 100vw; background: url(image/6-2.jpeg);background-size: 100% 100%; background-repeat: no-repeat;height: 85vw;left:0;top: 17vw;}
 /* .et-down {display: flex; flex-direction: row;padding:0.8rem 0.5rem;} */
 .et-left {width: 50vw; left: 9vw; top: 109vw; }
-.et-right {width: 29.2vw; right: 3vw; top: 116vw; opacity: 0;}
+.et-right {width: 23.9vw; right: 6vw; top: 119vw; opacity: 0;}
 /* .et-right {width: 2rem; height: 3rem; background-image: url(image/6-4.png); background-size: 100% 100%; position: absolute; right: 0.2rem;bottom: 1.2rem;} */
 .swiper-slide-active .et-right {-webkit-animation:fadeInRight 1s .6s ease both;-moz-animation:fadeInRight 1s .6s ease both; ;animation-fill-mode: forwards;}
 @-webkit-keyframes slide-in-right {
@@ -1471,8 +1473,8 @@
      opacity: 0;
 }
 .honor_box2 .honor_2_2 {
-    width: 94.3vw;
-    height: 43vw;
+    /* width: 94.3vw; */
+    height: 39vw;
     margin-left: 10vw;
      /* left: 4.13vw; top: 0.5vh; position: absolute; */
      opacity: 0;
@@ -1956,7 +1958,7 @@
                                     <img src="image/menu-ubpa.png" class="menu-title1" />
                                 </li>
                                 <img src="image/line2.gif" class="line_move1" />
-                                <li class="curright currights">
+                                <li class="curright currights" id="curright">
                                     <img src="image/menu-2.png" class="menu2" height="100%" alt="">
                                     <img src="image/rightmask.png" class="rightmask2" />
                                     <img src="image/menu-jt.png" class="menu-title2"/>
@@ -2408,7 +2410,6 @@ obj.addEventListener('touchstart', function(event) {
     event.preventDefault();// 阻止浏览器默认事件，重要 
     // var touch = event.targetTouches[0];
     // obj.style.left = touch.pageX-50 + 'px';
-    console.log('234dhh')
         // obj.style.top = touch.pageY-50 + 'px';
 }, false)
 
@@ -2532,10 +2533,20 @@ function loadComplete(){
         $(".navbtn,.nextbar").fadeIn();
     },10)
 }
+
+
 /////
 $(".navbtn").click(function () {
     $(".navbar").fadeIn();
     $(".nextbar").fadeOut();
+    const cur = document.getElementById("curright");
+    console.log(cur) 
+    const list1 = document.getElementsByClassName('bar-list')[0]
+    cur.addEventListener('animationend',function() {
+        console.log('fgfg')
+        $(".bar-list").css('box-shadow','3px 0px 3px 0px rgba(0, 0, 0, 1)')
+        $(".bar-lists").css('box-shadow','3px 0px 3px 0px rgba(0, 0, 0, 1)')
+    })
     // $(".line_img").fadeIn()
     // setTimeout(() => {
     //     $(".honor_left").addClass('honor_left1')
@@ -2603,30 +2614,51 @@ $(".closebtn").click(function(){
 $(".navbar li").eq(0).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(1,false);
+    setTimeout(() => {
+        $(".bar-list").css('box-shadow','')
+        $(".bar-lists").css('box-shadow','')
+    },1000)
     // $(".navbar ul li").removeClass("cur");
     // $(".navbar ul li").eq(0).addClass("cur");
 })
 $(".navbar li").eq(1).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(2,false);
+    setTimeout(() => {
+        $(".bar-list").css('box-shadow','')
+        $(".bar-lists").css('box-shadow','')
+    },1000)
     // $(".navbar ul li").removeClass("cur");
     // $(".navbar ul li").eq(1).addClass("cur");
 })
 $(".navbar li").eq(2).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(8,false);
+    setTimeout(() => {
+        $(".bar-list").css('box-shadow','')
+        $(".bar-lists").css('box-shadow','')
+    },1000)
+    
     // $(".navbar ul li").removeClass("cur");
     // $(".navbar ul li").eq(2).addClass("cur");
 })
 $(".navbar li").eq(3).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(3,false);
+    setTimeout(() => {
+        $(".bar-list").css('box-shadow','')
+        $(".bar-lists").css('box-shadow','')
+    },1000)
     // $(".navbar ul li").removeClass("cur");
     // $(".navbar ul li").eq(3).addClass("cur");
 })
 $(".navbar li").eq(4).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(14,false);
+    setTimeout(() => {
+        $(".bar-list").css('box-shadow','')
+        $(".bar-lists").css('box-shadow','')
+    },1000)
     // $(".navbar ul li").removeClass("cur");
     // $(".navbar ul li").eq(4).addClass("cur");
 })
@@ -2637,19 +2669,29 @@ $(".navbar li").eq(5).on("click",function(){
         element.addEventListener('animationend', function() {
             setTimeout(() => {
                 $(".honor_left").removeClass('honor_left1')
-               
                 $(".honor_2_1").css('margin-left','110vw')
-            },500)
+                $(".bar-list").css('box-shadow','')
+                $(".bar-lists").css('box-shadow','')
+            },1000)
         })
+        
 })
 $(".navbar li").eq(6).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(17,false);
+    setTimeout(() => {
+        $(".bar-list").css('box-shadow','')
+        $(".bar-lists").css('box-shadow','')
+    },1000)
     // $(".navbar ul li").removeClass("cur");
     // $(".navbar ul li").eq(6).addClass("cur");
 })
 $(".navbar li").eq(7).on("click",function(){
     $(".navbar").fadeOut();
+    setTimeout(() => {
+        $(".bar-list").css('box-shadow','')
+        $(".bar-lists").css('box-shadow','')
+    },1000)
 })
 $(".qietan").on("click",function(){
     // $(".navbar").fadeOut();
