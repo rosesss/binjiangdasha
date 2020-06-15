@@ -282,11 +282,11 @@
     width: 98.8vw;
 }
 .navbar .bar-list{
-    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;position: relative;box-shadow: 3px 0px 3px 1px rgba(0, 0, 0, 1);
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height:37vw;position: relative;box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 1);
 }
 
 .navbar .bar-lists {
-    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;position: relative;box-shadow: 3px 0px 3px 1px rgba(0, 0, 0, 1);
+    display: flex;flex-direction: row; align-items: center;width: 84vw; height: 37vw;position: relative;box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 1);
 }
 .navbar .bar-list {
     /* -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -1303,7 +1303,7 @@
     animation-fill-mode: forwards;
 }
 .et_txt13 {left: 10vw;bottom: 30vh; opacity: 0;}.et_txt13 img{width:2.55rem;height:auto;}
-.et_bg13_cover .et_txt14 {left: 16vw;bottom: 0;top: 0;margin: auto; opacity: 0;width: 34vw;}
+.et_bg13_cover .et_txt14 {left: 0; right: 0;bottom: 0;top: 0;margin: auto; opacity: 0;width: 34vw;}
 .et_txt7 {left: 0;bottom:0;right:0;top: 0; margin: auto; opacity: 0;}.et_txt7 img{width:47.4vw;height:auto; }
 .et_bg7_cover .et_txt7_img img{
     width: 39.3vw;
@@ -1314,10 +1314,24 @@
 .et_bg7_cover .et_txt9 img{
     position: absolute; left:0;top:0; width: 39.2vw;
 }
+
+.et_bg7_cover .et_txt12 {
+    left:0;top: 0;right:0;bottom:0;margin: auto;opacity: 0;
+}
+.et_bg7_cover .et_txt12 img{
+    position: absolute; left:0;top:0; width: 35.3vw;
+}
+
+.et_bg7_cover .et_txt13 {
+    left:0;top: 0;right:0;bottom:0;margin: auto;opacity: 0;
+}
+.et_bg7_cover .et_txt13 img{
+    position: absolute; left:0;top:0; width: 49vw;
+}
 /* .et_txt9 {left: 10vw;bottom:30vh; opacity: 0;}.et_txt9 img{width:39.2vw;height:auto; } */
 .et_txt11 {left: 10vw;bottom:30vh; opacity: 0;}.et_txt11 img{width:35.3vw;height:auto; }
-.et_txt12 {left: 10vw;bottom:29vh; opacity: 0;}.et_txt12 img{width:35.3vw;height:auto; }
-.et_txt13 {left: 10vw;bottom:29vh; opacity: 0;}.et_txt13 img{width:49vw;height:auto; }
+/* .et_txt12 {left: 10vw;bottom:29vh; opacity: 0;}.et_txt12 img{width:35.3vw;height:auto; } */
+/* .et_txt13 {left: 10vw;bottom:29vh; opacity: 0;}.et_txt13 img{width:49vw;height:auto; } */
 .swiper-slide-active .et_txt14 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt13 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
 .swiper-slide-active .et_txt12 {-webkit-animation: slide-in-left 1s ease-out 0.5s ;animation: slide-in-left 1s ease-out 0.5s ;animation-fill-mode: forwards;}
@@ -2197,8 +2211,9 @@
                 <div class="et_cont pa">
                     <div class="et_bg7_cover">
                         <img src="image/12-2.png" alt="" />
+                        <div class="et_txt12 pa"><img src="image/16-2.png" alt=""></div>
                     </div>
-                    <div class="et_txt12 pa"><img src="image/16-2.png" alt=""></div>
+                    
                     <div class="et_titlejy pa"><img src="image/16-3.png" alt=""></div>
                 </div>
             </div>
@@ -2207,8 +2222,11 @@
                     <img src="image/17-1.jpg"  alt=""/>
                 </div>
                 <div class="et_cont pa">
-                    <div class="et_bg7_cover"><img src="image/12-2.png" alt="" /></div>
-                    <div class="et_txt13 pa"><img src="image/17-2.png" alt=""></div>
+                    <div class="et_bg7_cover">
+                        <img src="image/12-2.png" alt="" />
+                        <div class="et_txt13 pa"><img src="image/17-2.png" alt=""></div>
+                    </div>
+                    
                     <div class="et_title_13 pa"><img src="image/17-3.png" alt=""></div>
                 </div>
             </div>
@@ -2519,11 +2537,14 @@ $(".navbtn").click(function () {
     $(".navbar").fadeIn();
     $(".nextbar").fadeOut();
     // $(".line_img").fadeIn()
-    setTimeout(() => {
-        $(".honor_left").addClass('honor_left1')
-        $(".honor_2_1").css('margin-left','')
-        $(".honor_2_1").addClass('honor_2_2')
-    }, 300)
+    // setTimeout(() => {
+    //     $(".honor_left").addClass('honor_left1')
+    //     $(".honor_2_1").css('margin-left','')
+    //     $(".honor_2_1").addClass('honor_2_2')
+    // }, 300)
+    $(".honor_left").addClass('honor_left1')
+    $(".honor_2_1").css('margin-left','')
+    // $(".honor_2_1").removeClass('honor_2_2')
     
 })
 
@@ -2616,8 +2637,9 @@ $(".navbar li").eq(5).on("click",function(){
         element.addEventListener('animationend', function() {
             setTimeout(() => {
                 $(".honor_left").removeClass('honor_left1')
+               
                 $(".honor_2_1").css('margin-left','110vw')
-            },300)
+            },500)
         })
 })
 $(".navbar li").eq(6).on("click",function(){
