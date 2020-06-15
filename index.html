@@ -93,7 +93,7 @@
 
 .bg2 {width:auto;height:100%; right:0;top:0;z-index:997;}
 .bg2 img { position: absolute;right:0;top:0;width:auto;height: 100%;}
-.navbtn {width:0.7rem;height:0.7rem; display:none;background-image: url(image/menu.png); background-size:cover; background-repeat: no-repeat;left: 0.36rem;top:0.44rem; z-index: 999;}
+.navbtn {width:0.5rem;height:0.5rem; display:none;background-image: url(image/menu.png); background-size:cover; background-repeat: no-repeat;left: 0.36rem;top:0.44rem; z-index: 999;}
 .swiper-container {width: 100%;height: 100%; display: none;}
 .swiper-slide {
     text-align: center;
@@ -297,43 +297,43 @@
 }
 .navbar .bar-list .line_move1 {
     position: absolute;
-    left: -8vw;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin:auto;
-    width: 78vw;
-    z-index: 999;
-}
-.navbar .bar-lists .line_move2 {
-    position: absolute;
-    left: -3vw;
+    left: -7vw;
     top: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 77vw;
+    width: 34vw;
+    z-index: 999;
+}
+.navbar .bar-lists .line_move2 {
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 35vw;
     z-index: 999;
 }
 .navbar .bar-list .line_move3 {
     position: absolute;
     left: -6vw;
-    top: 0vw;
+    top: 1vw;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 78vw;
+    width: 34vw;
     z-index: 999;
+
 }
 .navbar .bar-lists .line_move4 {
     position: absolute;
-    left: -3vw;
-    top: 0;
+    left: 0vw;
+    top: 1vw;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 77vw;
-    z-index: 999;
+    width: 34vw;
     z-index: 999;
 }
 .navbar .bar-lists {
@@ -1459,9 +1459,25 @@
 .honor_box1 {width: 100%; height: 30vh; position: absolute; left: 0;bottom: 0;height: 32vh;display: flex; flex-direction: row;flex-wrap:nowrap;overflow-x: scroll;}
 .honor_box2 {width: 100%; height: 30vh; position: absolute; left:0;top: 63vh;;display: flex; flex-direction: row;flex-wrap:nowrap;overflow-x: scroll;}
 .honor_box2::-webkit-scrollbar {
-            display: none;
-            width: 0 !important;
-        }
+    display: none;
+    width: 0 !important;
+}
+.et_bg12::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+.et_bg11::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+.et_bg7::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+.bg9::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
 .honor_box2 .honor_left2 {
     width: 100%;
     height: 100%;
@@ -1918,7 +1934,7 @@
 .btnplay {
     background-image: url(image/msc.png);
     background-repeat: no-repeat;
-    background-size: 1.1rem 0.63rem;
+    background-size: 1.03rem 0.53rem;
     background-position: -0.53rem 0;
     position: absolute;
     width: 0.53rem;
@@ -2663,6 +2679,7 @@ $(".closebtn").click(function(){
 $(".navbar li").eq(0).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(1,false);
+    console.log('234577')
     setTimeout(() => {
         $(".bar-list").css('box-shadow','')
         $(".bar-lists").css('box-shadow','')
