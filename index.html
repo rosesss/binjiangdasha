@@ -1239,27 +1239,36 @@
 .et_title6 {left: 0.95rem;top: 2.12rem;}.et_title6 img{width:3.76rem;height:auto; vertical-align: top;}
 .swiper-slide-active .et_title6 {-webkit-animation:fadeInLeft 1s .2s ease both;-moz-animation:fadeInLeft 1s .2s ease both;}
 .autobox {width: 100%;}
-.et_bg7 {width: auto;height: 72vh;z-index:998;left:0;top: 0;}
+.et_bg7 {width: auto;height: 72vh;z-index:998;left:0;top: 0;overflow-x: scroll;}
+.et_bg7 .auto_move_img1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 .et_bg7 img {
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+    width: auto;
+    height: 78vh;
+}
+.et_bg11 {width: auto;height:72vh;z-index:998;left:0;top: 0;overflow-x: scroll}
+.et_bg11 .auto_move_img2 {
     position: absolute;
     right: 0;
     top: 0;
-    width: auto;
-    height: 100%;
 }
-.et_bg11 {width: auto;height:72vh;z-index:998;left:0;top: 0;}
 .et_bg11 img {
-    position: absolute;
-    right: 0;
-    top: 0;
     width: auto;
     height: 100%;
 }
-.et_bg12 {width: auto;height:72vh;z-index:998;left:0;top: 0;}
-.et_bg12 img {
+.et_bg12 {width: auto;height:72vh;z-index:998;left:0;top: 0;overflow-x: scroll}
+.et_bg12 .auto_move_img3 {
     position: absolute;
     right: 0;
     top: 0;
+}
+.et_bg12 img {
     width: auto;
     height: 100%;
 }
@@ -1270,6 +1279,7 @@
     width: 63.8vw;
     height: 27vw;
     opacity: 0;
+    z-index: 999;
 }
 .et_bg13_cover {
     position: absolute;
@@ -1430,8 +1440,11 @@
 .bg7 {width: 100%;height:100%; left:0; top: 0;} .bg7 img{position: absolute; left:0; top:0;width: 100vw; height: 100%;}
 .bg8 {width: 100%;height:100%; left:0; top:0;} .bg8 img{position: absolute; left:0; top:0;width: 100%; height: 100%;}
 .swiper-slide-active .bg8 {}
-.bg9 {width: auto;height:61vh;z-index:998;left:0;top: 0;}.bg9 img {position: absolute; right: 0; width: auto; height: 100%;}
-.bg9 .bg9_honor {width: 10vw; height: 11vw; left: 43.6vw; bottom: 0;}
+.bg9 {width: auto;height:61vh;z-index:998;left:0;top: 0;overflow-x: scroll;}.bg9 img { width: auto; height: 100%;}
+.bg9 .auto_move_img4 {
+    position: absolute; right: 0;
+}
+.bg9 .bg9_honor {width: 10vw; height: 11vw; left: 43.6vw; bottom: -1860vh;position: fixed;}
 .animation2 {-webkit-animation: slide-out-left 2s ease-in 2s;animation: slide-out-left 2s ease-in 2s;animation-fill-mode: forwards;}
 .swiper-slide-active .bg9 .bg9_honor {-webkit-animation:fadeIn .7s .8s ease both;-moz-animation:fadeIn .7s .8s ease both; }
 .honor_box1 .honor_left1 {
@@ -2156,16 +2169,16 @@
                 </div>
             <div class="swiper-slide">
                 <div class="et_bg7 pa scstyle2 ">
-                    <img src="image/12-1.jpg"  alt=""/>
+                    <img src="image/12-1.jpg" class="auto_img1 auto_move_img1"  alt=""/>
                 </div>
-                <div class="et_cont pa">
+                <!-- <div class="et_cont pa"> -->
                     <div class="et_bg7_cover">
                         <img src="image/12-2.png" alt="" />
                         <div class="et_txt7 pa"><img src="image/12-3.png" alt=""></div>
                     </div>
                     
                     <div class="et_title8 pa"><img src="image/12-4.png" alt=""></div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="swiper-slide">
                 <div class="et_bg8 pa">
@@ -2208,29 +2221,28 @@
             </div>
             <div class="swiper-slide">
                 <div class="et_bg11 pa scstyle5">
-                    <img src="image/16-1.jpg"  alt=""/>
+                    <img src="image/16-1.jpg" class="auto_img2 auto_move_img2"  alt=""/>
                 </div>
-                <div class="et_cont pa">
+                <!-- <div class="et_cont pa"> -->
                     <div class="et_bg7_cover">
                         <img src="image/12-2.png" alt="" />
                         <div class="et_txt12 pa"><img src="image/16-2.png" alt=""></div>
                     </div>
                     
                     <div class="et_titlejy pa"><img src="image/16-3.png" alt=""></div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="swiper-slide">
                 <div class="et_bg12 pa scstyle8">
-                    <img src="image/17-1.jpg"  alt=""/>
+                    <img src="image/17-1.jpg" class="auto_img3 auto_move_img3" alt=""/>
                 </div>
-                <div class="et_cont pa">
+                <!-- <div class="et_cont pa"> -->
                     <div class="et_bg7_cover">
-                        <img src="image/12-2.png" alt="" />
+                        <img src="image/12-2.png"  alt="" />
                         <div class="et_txt13 pa"><img src="image/17-2.png" alt=""></div>
                     </div>
-                    
                     <div class="et_title_13 pa"><img src="image/17-3.png" alt=""></div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="swiper-slide">
                 <div class="et_bg13 pa">
@@ -2274,10 +2286,10 @@
             </div>
             <div class="swiper-slide">
                 <div class="bg9 pa scstyle6">
-                    <img src="image/21-1.jpg" alt="" />
+                    <img src="image/21-1.jpg" class="auto_img4 auto_move_img4" alt="" />
                     <img src="image/21-2.png" class="bg9_honor pa" />
                 </div>
-                <div class="et_cont pa">
+                <!-- <div class="et_cont pa"> -->
                     
                     <div class="honor_box honor_box2">
                         <div class="honor_left honor_left2 honor_left1">
@@ -2286,7 +2298,7 @@
                         </div>
                         <img src="image/21-4.png" class="honor_2_1 honor_2_2"/>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="swiper-slide">
                 <div class="bg10 pa">
@@ -2405,14 +2417,6 @@ if(soundStatus==1){
     localStorage.setItem("soundStatus",0);
 }
 
-var obj = document.getElementsByClassName('et_bg12')[0];
-obj.addEventListener('touchstart', function(event) {
-    event.preventDefault();// 阻止浏览器默认事件，重要 
-    // var touch = event.targetTouches[0];
-    // obj.style.left = touch.pageX-50 + 'px';
-        // obj.style.top = touch.pageY-50 + 'px';
-}, false)
-
 ////
 var defaultIrnterval;
 var staticIndex=1;
@@ -2512,21 +2516,62 @@ function loadComplete(){
                         $(".honor_left").addClass('honor_left1')
                         $(".honor_2_1").css('margin-left','')
                         $(".honor_2_1").addClass('honor_2_2')
-                        // $(".honor_box").removeClass('honor_box2');
-                        // $('.honor_left').removeClass('honor_left2');
-                        // $('.bg9_title').removeClass('bg9_title2')
-                        // $(".honor_1").removeClass('honor_1_2')
-                        // $(".honor_2").removeClass('honor_2_2')
-
-                        // $(".honor_box").addClass('honor_box1');
-                        // $('.honor_left').addClass('honor_left1');
-                        // $('.bg9_title').addClass('bg9_title1').addClass('pa');
-                        // $(".honor_1").addClass('honor_1_1').addClass('pa');
-                        // $(".honor_2").addClass('honor_2_1').addClass('pa');
                     }
-                    // else {
-                    //     $(".nextbar").fadeIn();
-                    // }
+
+                    if (this.activeIndex === 10) {
+                        var autoimg1 = document.getElementsByClassName('et_bg7')[0];
+                        autoimg1.addEventListener('animationend', function() {
+                            setTimeout(() => {
+                                $(".auto_img1").removeClass('auto_move_img1')
+                                $(".et_bg7").css('width', '100%')
+                            },2000)
+                            
+                        })
+                    } else {
+                        $(".auto_img1").addClass('auto_move_img1')
+                        $(".et_bg7").css('width', 'auto')
+                    }
+
+                    if (this.activeIndex === 14) {
+                        var autoimg2 = document.getElementsByClassName('et_bg11')[0];
+                        autoimg2.addEventListener('animationend', function() {
+                            setTimeout(() => {
+                                $(".auto_img2").removeClass('auto_move_img2')
+                                $(".et_bg11").css('width', '100%')
+                            }, 1000)
+                        })
+                    } else {
+                        $(".auto_img2").addClass('auto_move_img2')
+                        $(".et_bg11").css('width', 'auto')
+                    }
+
+                    if (this.activeIndex === 15) {
+                        var autoimg3 = document.getElementsByClassName('et_bg12')[0];
+                        console.log(autoimg3)
+                        autoimg3.addEventListener('animationend', function() {
+                            setTimeout(() => {
+                                $(".auto_img3").addClass('auto_move_img3')
+                                $(".et_bg12").css('width', '100%')
+                            },1000)
+                        })
+                    } else {
+                        $(".auto_img3").addClass('auto_move_img3')
+                        $(".et_bg12").css('width', 'auto')
+                    }
+
+                    if (this.activeIndex === 19) {
+                        var autoimg4 = document.getElementsByClassName('bg9')[0];
+                        autoimg4.addEventListener('animationend', function() {
+                            console.log('ends')
+                            setTimeout(() => {
+                                $(".auto_img4").removeClass('auto_move_img4')
+                                $(".bg9").css('width', '100%')
+                            }, 6000)
+                        })
+                    } else {
+                        $(".auto_img4").addClass('auto_move_img4')
+                        $(".bg9").css('width', 'auto')
+                    }
                 },
             }
         });
@@ -2665,6 +2710,15 @@ $(".navbar li").eq(4).on("click",function(){
 $(".navbar li").eq(5).on("click",function(){
     $(".navbar").fadeOut();
     swiper.slideTo(19,false);
+    var autoimg4 = document.getElementsByClassName('bg9')[0];
+    autoimg4.addEventListener('animationend', function() {
+        console.log('ends')
+        setTimeout(() => {
+            $(".auto_img4").removeClass('auto_move_img4')
+            $(".bg9").css('width', '100%')
+        }, 6000)
+        
+    })
     var element = document.getElementsByClassName('honor_2_1')[0]
         element.addEventListener('animationend', function() {
             setTimeout(() => {
