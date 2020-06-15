@@ -2522,14 +2522,16 @@ function loadComplete(){
                         var autoimg1 = document.getElementsByClassName('et_bg7')[0];
                         autoimg1.addEventListener('animationend', function() {
                             setTimeout(() => {
+                                // $(".et_bg7").fadeOut()
                                 $(".auto_img1").removeClass('auto_move_img1')
                                 $(".et_bg7").css('width', '100%')
+                                // $(".et_bg7").fadeIn()
                             },2000)
-                            
                         })
                     } else {
                         $(".auto_img1").addClass('auto_move_img1')
                         $(".et_bg7").css('width', 'auto')
+                        // $(".et_bg7").fadeIn()
                     }
 
                     if (this.activeIndex === 14) {
